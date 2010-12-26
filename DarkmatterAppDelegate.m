@@ -3,7 +3,7 @@
 //  Darkmatter
 //
 //  Created by Matt Rubin on 12/26/10.
-//  Copyright 2010 Stanford University. All rights reserved.
+//  Copyright 2010. All rights reserved.
 //
 
 #import "DarkmatterAppDelegate.h"
