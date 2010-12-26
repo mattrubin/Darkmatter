@@ -17,3 +17,11 @@ profile
 
 # old skool
 .svn
+
+
+
+# Sources:
+# https://gist.github.com/137348
+# https://github.com/rentzsch/OAuthConsumer/blob/master/.gitignore
+# http://lists.apple.com/archives/xcode-users/2006/Apr/msg00689.html
+# http://lists.apple.com/archives/xcode-users/2007/oct/msg00465.html
