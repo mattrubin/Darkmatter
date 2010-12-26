@@ -10,10 +10,20 @@
 
 @implementation DarkmatterAppDelegate
 
-@synthesize window;
+@synthesize mainWindow;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	// Insert code here to initialize your application 
+	[self.mainWindow center];
+}
+
+- (IBAction)toggleFullscreen:(id)sender
+{
+	[mainWindow toggleFullscreen];
+}
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)app
+{
+    return YES;
 }
 
 @end
