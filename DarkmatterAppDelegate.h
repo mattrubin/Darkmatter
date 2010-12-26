@@ -7,11 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "GameWindow.h"
 
 @interface DarkmatterAppDelegate : NSObject <NSApplicationDelegate> {
-    NSWindow *window;
+	GameWindow *mainWindow;
 }
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet GameWindow *mainWindow;
+
+- (IBAction)toggleFullscreen:(id)sender;
 
 @end
