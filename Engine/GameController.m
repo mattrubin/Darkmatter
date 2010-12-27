@@ -38,7 +38,8 @@
 #pragma mark Memory management
 
 - (void)dealloc {
-	self.inputHandler = nil;
+	[inputHandler release];
+	inputHandler = nil;
 	[super dealloc];
 }
 
