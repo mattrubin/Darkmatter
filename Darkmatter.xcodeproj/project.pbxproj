@@ -19,6 +19,10 @@
 		C9E9A7FE12C80E2600635372 /* Point2.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A7FD12C80E2600635372 /* Point2.m */; };
 		C9E9A80112C80F8800635372 /* Point3.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A80012C80F8800635372 /* Point3.m */; };
 		C9E9A80C12C8112500635372 /* Angle3.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A80B12C8112500635372 /* Angle3.m */; };
+		C9E9A8B812C83D8100635372 /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A8B712C83D8100635372 /* OpenGLView.m */; };
+		C9E9A8D012C842E600635372 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A8CF12C842E600635372 /* GameController.m */; };
+		C9E9A8DD12C8451100635372 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9A8DC12C8451100635372 /* CoreVideo.framework */; };
+		C9E9A8E412C8452500635372 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9A8E312C8452500635372 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,12 @@
 		C9E9A80012C80F8800635372 /* Point3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Point3.m; sourceTree = "<group>"; };
 		C9E9A80A12C8112500635372 /* Angle3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Angle3.h; sourceTree = "<group>"; };
 		C9E9A80B12C8112500635372 /* Angle3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Angle3.m; sourceTree = "<group>"; };
+		C9E9A8B612C83D8100635372 /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		C9E9A8B712C83D8100635372 /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
+		C9E9A8CE12C842E600635372 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		C9E9A8CF12C842E600635372 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
+		C9E9A8DC12C8451100635372 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		C9E9A8E312C8452500635372 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				C9E9A8DD12C8451100635372 /* CoreVideo.framework in Frameworks */,
+				C9E9A8E412C8452500635372 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +78,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C9E9A8B912C83E0700635372 /* Engine */,
+				C9E9A8B512C83D6900635372 /* OpenGL */,
 				C9E9A7C912C809F800635372 /* DataTypes */,
 				C9E9A73112C7EEB100635372 /* Window */,
 				256AC3D80F4B6AC300CF3369 /* DarkmatterAppDelegate.h */,
@@ -136,6 +150,8 @@
 			children = (
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				C9E9A8DC12C8451100635372 /* CoreVideo.framework */,
+				C9E9A8E312C8452500635372 /* OpenGL.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -183,6 +199,24 @@
 				C9E9A80012C80F8800635372 /* Point3.m */,
 			);
 			name = Points;
+			sourceTree = "<group>";
+		};
+		C9E9A8B512C83D6900635372 /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				C9E9A8B612C83D8100635372 /* OpenGLView.h */,
+				C9E9A8B712C83D8100635372 /* OpenGLView.m */,
+			);
+			path = OpenGL;
+			sourceTree = "<group>";
+		};
+		C9E9A8B912C83E0700635372 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				C9E9A8CE12C842E600635372 /* GameController.h */,
+				C9E9A8CF12C842E600635372 /* GameController.m */,
+			);
+			path = Engine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +283,8 @@
 				C9E9A7FE12C80E2600635372 /* Point2.m in Sources */,
 				C9E9A80112C80F8800635372 /* Point3.m in Sources */,
 				C9E9A80C12C8112500635372 /* Angle3.m in Sources */,
+				C9E9A8B812C83D8100635372 /* OpenGLView.m in Sources */,
+				C9E9A8D012C842E600635372 /* GameController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
