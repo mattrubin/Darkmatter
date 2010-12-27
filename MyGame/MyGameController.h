@@ -9,12 +9,14 @@
 #import <Cocoa/Cocoa.h>
 #import "GameController.h"
 #import "MyScene.h"
+#import "MyMenu.h"
 
 @interface MyGameController : GameController {
 	MyScene *scene;
+	MyMenu *menu;
 }
 
 @property (retain) MyScene *scene;
-
+@property (retain) MyMenu *menu;
 
 @end
