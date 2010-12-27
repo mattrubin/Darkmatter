@@ -58,6 +58,10 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 	[super prepareOpenGL];
 	glClear(GL_COLOR_BUFFER_BIT);
 	
+	//Enable alpha belnding
+	glEnable (GL_BLEND);
+	glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
 	[controller gameDidLoad];
 	
 	

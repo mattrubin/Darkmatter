@@ -15,7 +15,7 @@
 	self.clearsOnDraw = NO;
 }
 - (void)drawObjects {
-    glColor3f(1.0f, 0.3f, 0.25f);
+    glColor4f(1.0f, 0.3f, 0.25f, 0.7f);
     glBegin(GL_TRIANGLES);
     {
 		glVertex3f( 0, 0, 0);
