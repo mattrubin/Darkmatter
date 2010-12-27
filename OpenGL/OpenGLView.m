@@ -89,6 +89,13 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 - (BOOL)acceptsFirstResponder { return YES; }
 - (BOOL)isOpaque { return YES; }
 
+- (void)keyDown:(NSEvent *)e {
+	[controller.inputHandler keyDown:e];
+}
+- (void)keyUp:(NSEvent *)e {
+	[controller.inputHandler keyUp:e];
+}
+
 
 - (void)dealloc {
 	CVDisplayLinkStop(displayLink);

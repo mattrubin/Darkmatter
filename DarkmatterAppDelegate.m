@@ -14,6 +14,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	[self.mainWindow center];
+	[[NSNotificationCenter defaultCenter] addObserver:self.mainWindow selector:@selector(exitFullscreen) name:@"ExitFullscreen" object:nil];
 }
 
 - (IBAction)toggleFullscreen:(id)sender

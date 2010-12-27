@@ -11,6 +11,7 @@
 
 @implementation GameController
 
+@synthesize inputHandler;
 @synthesize renderTime;
 
 - (void)advanceTimeBy:(double)delta {
@@ -19,15 +20,12 @@
 }
 
 - (void)gameDidLoad {
-	// Initialize game.
-	NSLog(@"Game Loaded!");
+	inputHandler = [InputHandler new];
 }
 
 - (void)drawAtSize:(NSSize)size
 {
-	// Draw graphics in a frame of the given size
-	NSLog(@"Drawing!");
-	glClearColor(1,0,0,1);
+	glClearColor(1,.5,0,1);
 	glClear(GL_COLOR_BUFFER_BIT);
 }
 

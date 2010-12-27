@@ -23,6 +23,7 @@
 		C9E9A8D012C842E600635372 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A8CF12C842E600635372 /* GameController.m */; };
 		C9E9A8DD12C8451100635372 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9A8DC12C8451100635372 /* CoreVideo.framework */; };
 		C9E9A8E412C8452500635372 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9A8E312C8452500635372 /* OpenGL.framework */; };
+		C9E9A90E12C84A7600635372 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A90D12C84A7600635372 /* InputHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		C9E9A8CF12C842E600635372 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 		C9E9A8DC12C8451100635372 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		C9E9A8E312C8452500635372 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C9E9A90C12C84A7600635372 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		C9E9A90D12C84A7600635372 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +218,8 @@
 			children = (
 				C9E9A8CE12C842E600635372 /* GameController.h */,
 				C9E9A8CF12C842E600635372 /* GameController.m */,
+				C9E9A90C12C84A7600635372 /* InputHandler.h */,
+				C9E9A90D12C84A7600635372 /* InputHandler.m */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				C9E9A80C12C8112500635372 /* Angle3.m in Sources */,
 				C9E9A8B812C83D8100635372 /* OpenGLView.m in Sources */,
 				C9E9A8D012C842E600635372 /* GameController.m in Sources */,
+				C9E9A90E12C84A7600635372 /* InputHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,13 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import "InputHandler.h"
 
 @interface GameController : NSObject {
+	InputHandler *inputHandler;
+
 	CFAbsoluteTime renderTime;
 }
 
+@property (readonly) InputHandler *inputHandler;
 @property (readwrite, assign) CFAbsoluteTime renderTime;
+
 - (void)updateCamera;
 
 - (void)gameDidLoad;
