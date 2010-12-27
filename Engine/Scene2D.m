@@ -7,11 +7,9 @@
 //
 
 #import "Scene2D.h"
-#import "OpenGL.h"
 
 
 @interface Scene2D ()
-- (void)clearView;
 - (void)prepare;
 - (void)drawObjects;
 @end
@@ -20,13 +18,12 @@
 @implementation Scene2D
 
 @synthesize camera;
-@synthesize clearColor;
 
 - (id)init {
 	if((self = [super init])){
 		camera = [OrthoCamera new];
-		self.clearColor = [Color4 black]; 
 	}
+	[self prepare];
 	return self;
 }
 
@@ -35,35 +32,31 @@
 	// OVERRIDE THIS METHOD
 }
 
-- (void)clearView {
-	[OpenGL setClearColor:clearColor];
-    glClear(GL_COLOR_BUFFER_BIT);
-}
 
-
-- (void)drawObjects:(NSSize)size {
+- (void)drawObjects {
 	// Draw objects here.
 	// OVERRIDE THIS METHOD
 	
     glColor3f(0.4f, 0.3f, 1.0f);
     glBegin(GL_TRIANGLES);
     {
-		glVertex3f( size.width/2-100, size.height/2-100, 0);
-		glVertex3f( size.width/2-100, size.height/2+100, 0);
-		glVertex3f( size.width/2+100, size.height/2-100, 0);
-		glVertex3f( size.width/2+100, size.height/2-100, 0);
-		glVertex3f( size.width/2-100, size.height/2+100, 0);
-		glVertex3f( size.width/2+100, size.height/2+100, 0);
+		glVertex3f( self.currentSize.width/2-100, self.currentSize.height/2-100, 0);
+		glVertex3f( self.currentSize.width/2-100, self.currentSize.height/2+100, 0);
+		glVertex3f( self.currentSize.width/2+100, self.currentSize.height/2-100, 0);
+		glVertex3f( self.currentSize.width/2+100, self.currentSize.height/2-100, 0);
+		glVertex3f( self.currentSize.width/2-100, self.currentSize.height/2+100, 0);
+		glVertex3f( self.currentSize.width/2+100, self.currentSize.height/2+100, 0);
     }
     glEnd();
 }
 
 
 - (void)drawAtSize:(NSSize)size {
-	//[self clearView];
+	[super drawAtSize:size];
+	
 	glPushMatrix();
 	[camera applyAtSize:size];
-	[self drawObjects:size];
+	[self drawObjects];
 	glPopMatrix();
 }
 
@@ -72,7 +65,6 @@
 
 - (void)dealloc {
 	self.camera = nil;
-	self.clearColor = nil;
 	[super dealloc];
 }
 

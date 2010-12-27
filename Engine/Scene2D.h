@@ -8,15 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 #import "OrthoCamera.h"
-#import "Color4.h"
+#import "Scene.h"
 
-@interface Scene2D : NSObject {
+@interface Scene2D : Scene {
 	OrthoCamera *camera;
-	Color4 *clearColor;
 }
 @property (retain) OrthoCamera *camera;
-@property (retain) Color4 *clearColor;
-
-- (void)drawAtSize:(NSSize)size;
 
 @end

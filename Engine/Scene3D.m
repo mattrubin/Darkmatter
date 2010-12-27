@@ -7,11 +7,9 @@
 //
 
 #import "Scene3D.h"
-#import "OpenGL.h"
 
 
 @interface Scene3D ()
-- (void)clearView;
 - (void)prepare;
 - (void)drawObjects;
 @end
@@ -20,12 +18,10 @@
 @implementation Scene3D
 
 @synthesize camera;
-@synthesize clearColor;
 
 - (id)init {
 	if((self = [super init])){
 		camera = [PerspectiveCamera new];
-		self.clearColor = [Color4 black];
 	}
 	[self prepare];
 	return self;
@@ -40,10 +36,6 @@
 	self.camera.yaw = -60;
 }
 
-- (void)clearView {
-	[OpenGL setClearColor:clearColor];
-    glClear(GL_COLOR_BUFFER_BIT);
-}
 
 - (void)drawObjects {
 	// Draw objects here.
@@ -64,7 +56,8 @@
 
 
 - (void)drawAtSize:(NSSize)size {
-	[self clearView];
+	[super drawAtSize:size];
+	
 	glPushMatrix();
 	[camera applyAtSize:size];
 	[self drawObjects];
@@ -76,7 +69,6 @@
 
 - (void)dealloc {
 	self.camera = nil;
-	self.clearColor = nil;
 	[super dealloc];
 }
 

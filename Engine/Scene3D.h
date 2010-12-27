@@ -7,16 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Scene.h"
 #import "PerspectiveCamera.h"
-#import "Color4.h"
 
-@interface Scene3D : NSObject {
+@interface Scene3D : Scene {
 	PerspectiveCamera *camera;
-	Color4 *clearColor;
 }
 @property (retain) PerspectiveCamera *camera;
-@property (retain) Color4 *clearColor;
-
-- (void)drawAtSize:(NSSize)size;
 
 @end
