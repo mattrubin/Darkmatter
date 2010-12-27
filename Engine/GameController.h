@@ -15,7 +15,7 @@
 	CFAbsoluteTime renderTime;
 }
 
-@property (readonly) InputHandler *inputHandler;
+@property (readonly, retain) InputHandler *inputHandler;
 @property (readwrite, assign) CFAbsoluteTime renderTime;
 
 - (void)updateCamera;

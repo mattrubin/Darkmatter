@@ -34,4 +34,12 @@
 	// Respond to input/time passing here.
 }
 
+
+#pragma mark Memory management
+
+- (void)dealloc {
+	self.inputHandler = nil;
+	[super dealloc];
+}
+
 @end

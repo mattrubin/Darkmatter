@@ -71,4 +71,13 @@
 	glPopMatrix();	
 }
 
+
+#pragma mark Memory management
+
+- (void)dealloc {
+	self.camera = nil;
+	self.clearColor = nil;
+	[super dealloc];
+}
+
 @end
