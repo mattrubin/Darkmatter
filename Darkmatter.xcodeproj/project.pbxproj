@@ -34,6 +34,7 @@
 		C9E9AA8912C86FE900635372 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9AA8712C86FE900635372 /* MyScene.m */; };
 		C9E9AB0212C8745E00635372 /* Scene2D.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9AB0112C8745E00635372 /* Scene2D.m */; };
 		C9E9AB4012C87CC400635372 /* MyMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9AB3F12C87CC400635372 /* MyMenu.m */; };
+		C9F09FB612C94975005F6386 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F09FB512C94975005F6386 /* Scene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,8 @@
 		C9E9AB0112C8745E00635372 /* Scene2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene2D.m; sourceTree = "<group>"; };
 		C9E9AB3E12C87CC400635372 /* MyMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMenu.h; sourceTree = "<group>"; };
 		C9E9AB3F12C87CC400635372 /* MyMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMenu.m; sourceTree = "<group>"; };
+		C9F09FB412C94975005F6386 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		C9F09FB512C94975005F6386 /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +266,8 @@
 		C9E9A94112C8589300635372 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C9F09FB412C94975005F6386 /* Scene.h */,
+				C9F09FB512C94975005F6386 /* Scene.m */,
 				C9E9A96D12C85D2200635372 /* Scene3D.h */,
 				C9E9A96E12C85D2200635372 /* Scene3D.m */,
 				C9E9AB0012C8745E00635372 /* Scene2D.h */,
@@ -373,6 +378,7 @@
 				C9E9AA8912C86FE900635372 /* MyScene.m in Sources */,
 				C9E9AB0212C8745E00635372 /* Scene2D.m in Sources */,
 				C9E9AB4012C87CC400635372 /* MyMenu.m in Sources */,
+				C9F09FB612C94975005F6386 /* Scene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
