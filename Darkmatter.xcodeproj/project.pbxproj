@@ -28,6 +28,8 @@
 		C9E9A94812C858FE00635372 /* OrthoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A94712C858FE00635372 /* OrthoCamera.m */; };
 		C9E9A94D12C85A6A00635372 /* PerspectiveCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A94C12C85A6A00635372 /* PerspectiveCamera.m */; };
 		C9E9A95512C85B0D00635372 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9A95412C85B0D00635372 /* GLUT.framework */; };
+		C9E9A96F12C85D2200635372 /* Scene3D.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A96E12C85D2200635372 /* Scene3D.m */; };
+		C9E9A97412C85DC800635372 /* OpenGL.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A97312C85DC800635372 /* OpenGL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,10 @@
 		C9E9A94B12C85A6A00635372 /* PerspectiveCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerspectiveCamera.h; sourceTree = "<group>"; };
 		C9E9A94C12C85A6A00635372 /* PerspectiveCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerspectiveCamera.m; sourceTree = "<group>"; };
 		C9E9A95412C85B0D00635372 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		C9E9A96D12C85D2200635372 /* Scene3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene3D.h; sourceTree = "<group>"; };
+		C9E9A96E12C85D2200635372 /* Scene3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene3D.m; sourceTree = "<group>"; };
+		C9E9A97212C85DC800635372 /* OpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGL.h; sourceTree = "<group>"; };
+		C9E9A97312C85DC800635372 /* OpenGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGL.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +99,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				256AC3D80F4B6AC300CF3369 /* DarkmatterAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* DarkmatterAppDelegate.m */,
 				C9E9A8B912C83E0700635372 /* Engine */,
 				C9E9A8B512C83D6900635372 /* OpenGL */,
 				C9E9A7C912C809F800635372 /* DataTypes */,
 				C9E9A73112C7EEB100635372 /* Window */,
-				256AC3D80F4B6AC300CF3369 /* DarkmatterAppDelegate.h */,
-				256AC3D90F4B6AC300CF3369 /* DarkmatterAppDelegate.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -222,6 +228,8 @@
 			children = (
 				C9E9A8B612C83D8100635372 /* OpenGLView.h */,
 				C9E9A8B712C83D8100635372 /* OpenGLView.m */,
+				C9E9A97212C85DC800635372 /* OpenGL.h */,
+				C9E9A97312C85DC800635372 /* OpenGL.m */,
 			);
 			path = OpenGL;
 			sourceTree = "<group>";
@@ -242,6 +250,8 @@
 		C9E9A94112C8589300635372 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C9E9A96D12C85D2200635372 /* Scene3D.h */,
+				C9E9A96E12C85D2200635372 /* Scene3D.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -329,6 +339,8 @@
 				C9E9A94512C858B400635372 /* Camera.m in Sources */,
 				C9E9A94812C858FE00635372 /* OrthoCamera.m in Sources */,
 				C9E9A94D12C85A6A00635372 /* PerspectiveCamera.m in Sources */,
+				C9E9A96F12C85D2200635372 /* Scene3D.m in Sources */,
+				C9E9A97412C85DC800635372 /* OpenGL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

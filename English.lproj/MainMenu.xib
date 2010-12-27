@@ -240,7 +240,7 @@
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSOpenGLView" id="67705605">
+						<object class="NSOpenGLView" id="239912546">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">1298</int>
 							<object class="NSPSMatrix" key="NSDrawMatrix"/>
@@ -264,7 +264,7 @@
 			<object class="NSCustomObject" id="755631768">
 				<string key="NSClassName">NSFontManager</string>
 			</object>
-			<object class="NSCustomObject" id="386651393">
+			<object class="NSCustomObject" id="524618190">
 				<string key="NSClassName">GameController</string>
 			</object>
 		</object>
@@ -354,8 +354,8 @@
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">controller</string>
-						<reference key="source" ref="67705605"/>
-						<reference key="destination" ref="386651393"/>
+						<reference key="source" ref="239912546"/>
+						<reference key="destination" ref="524618190"/>
 					</object>
 					<int key="connectionID">541</int>
 				</object>
@@ -528,7 +528,7 @@
 						<reference key="object" ref="439893737"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="67705605"/>
+							<reference ref="239912546"/>
 						</object>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -554,12 +554,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">539</int>
-						<reference key="object" ref="67705605"/>
+						<reference key="object" ref="239912546"/>
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">540</int>
-						<reference key="object" ref="386651393"/>
+						<reference key="object" ref="524618190"/>
 						<reference key="parent" ref="0"/>
 					</object>
 				</object>
@@ -616,7 +616,6 @@
 					<string>536.IBPluginDependency</string>
 					<string>539.CustomClassName</string>
 					<string>539.IBPluginDependency</string>
-					<string>540.IBPluginDependency</string>
 					<string>56.IBPluginDependency</string>
 					<string>56.ImportedFromIB2</string>
 					<string>57.IBEditorWindowLastContentRect</string>
@@ -675,7 +674,6 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>OpenGLView</string>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>

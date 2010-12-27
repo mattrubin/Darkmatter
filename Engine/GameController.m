@@ -25,12 +25,13 @@
 
 - (void)drawAtSize:(NSSize)size
 {
+	// Draw scene here.
 	glClearColor(1,.5,0,1);
 	glClear(GL_COLOR_BUFFER_BIT);
 }
 
 - (void)updateCamera{
-	//Respond to input/time passing here.
+	// Respond to input/time passing here.
 }
 
 @end
