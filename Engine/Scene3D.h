@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "PerspectiveCamera.h"
-
+#import "Color4.h"
 
 @interface Scene3D : NSObject {
 	PerspectiveCamera *camera;
