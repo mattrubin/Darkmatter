@@ -24,6 +24,10 @@
 		C9E9A8DD12C8451100635372 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9A8DC12C8451100635372 /* CoreVideo.framework */; };
 		C9E9A8E412C8452500635372 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9A8E312C8452500635372 /* OpenGL.framework */; };
 		C9E9A90E12C84A7600635372 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A90D12C84A7600635372 /* InputHandler.m */; };
+		C9E9A94512C858B400635372 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A94412C858B400635372 /* Camera.m */; };
+		C9E9A94812C858FE00635372 /* OrthoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A94712C858FE00635372 /* OrthoCamera.m */; };
+		C9E9A94D12C85A6A00635372 /* PerspectiveCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A94C12C85A6A00635372 /* PerspectiveCamera.m */; };
+		C9E9A95512C85B0D00635372 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9A95412C85B0D00635372 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +66,13 @@
 		C9E9A8E312C8452500635372 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		C9E9A90C12C84A7600635372 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		C9E9A90D12C84A7600635372 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		C9E9A94312C858B400635372 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		C9E9A94412C858B400635372 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
+		C9E9A94612C858FE00635372 /* OrthoCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrthoCamera.h; sourceTree = "<group>"; };
+		C9E9A94712C858FE00635372 /* OrthoCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrthoCamera.m; sourceTree = "<group>"; };
+		C9E9A94B12C85A6A00635372 /* PerspectiveCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerspectiveCamera.h; sourceTree = "<group>"; };
+		C9E9A94C12C85A6A00635372 /* PerspectiveCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerspectiveCamera.m; sourceTree = "<group>"; };
+		C9E9A95412C85B0D00635372 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +83,7 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				C9E9A8DD12C8451100635372 /* CoreVideo.framework in Frameworks */,
 				C9E9A8E412C8452500635372 /* OpenGL.framework in Frameworks */,
+				C9E9A95512C85B0D00635372 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +167,7 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 				C9E9A8DC12C8451100635372 /* CoreVideo.framework */,
 				C9E9A8E312C8452500635372 /* OpenGL.framework */,
+				C9E9A95412C85B0D00635372 /* GLUT.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -216,12 +229,34 @@
 		C9E9A8B912C83E0700635372 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				C9E9A94212C858A800635372 /* Cameras */,
+				C9E9A94112C8589300635372 /* Scenes */,
 				C9E9A8CE12C842E600635372 /* GameController.h */,
 				C9E9A8CF12C842E600635372 /* GameController.m */,
 				C9E9A90C12C84A7600635372 /* InputHandler.h */,
 				C9E9A90D12C84A7600635372 /* InputHandler.m */,
 			);
 			path = Engine;
+			sourceTree = "<group>";
+		};
+		C9E9A94112C8589300635372 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		C9E9A94212C858A800635372 /* Cameras */ = {
+			isa = PBXGroup;
+			children = (
+				C9E9A94312C858B400635372 /* Camera.h */,
+				C9E9A94412C858B400635372 /* Camera.m */,
+				C9E9A94612C858FE00635372 /* OrthoCamera.h */,
+				C9E9A94712C858FE00635372 /* OrthoCamera.m */,
+				C9E9A94B12C85A6A00635372 /* PerspectiveCamera.h */,
+				C9E9A94C12C85A6A00635372 /* PerspectiveCamera.m */,
+			);
+			name = Cameras;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +326,9 @@
 				C9E9A8B812C83D8100635372 /* OpenGLView.m in Sources */,
 				C9E9A8D012C842E600635372 /* GameController.m in Sources */,
 				C9E9A90E12C84A7600635372 /* InputHandler.m in Sources */,
+				C9E9A94512C858B400635372 /* Camera.m in Sources */,
+				C9E9A94812C858FE00635372 /* OrthoCamera.m in Sources */,
+				C9E9A94D12C85A6A00635372 /* PerspectiveCamera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
