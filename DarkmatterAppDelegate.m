@@ -27,4 +27,21 @@
     return YES;
 }
 
+- (BOOL)windowShouldClose:(id)sender {
+	NSAlert *alert = [[[NSAlert alloc] init] autorelease];
+	[alert setMessageText:@"Are you sure you want to quit?"];
+	[alert setInformativeText:@"If you quit now, your game may not be saved."];
+	[alert addButtonWithTitle:@"OK"];
+	[alert addButtonWithTitle:@"Cancel"];
+	[alert setAlertStyle:NSWarningAlertStyle];
+	[alert beginSheetModalForWindow:mainWindow modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:nil];
+	return NO;
+}
+
+- (void) alertDidEnd:(NSAlert *)alert returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo {
+	if(returnCode==1000)
+		[mainWindow close];
+}
+
+
 @end

@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "GameWindow.h"
 
-@interface DarkmatterAppDelegate : NSObject <NSApplicationDelegate> {
+@interface DarkmatterAppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate> {
 	GameWindow *mainWindow;
 }
 
