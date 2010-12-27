@@ -14,6 +14,11 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		C9E9A73412C7EEC600635372 /* GameWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A73312C7EEC600635372 /* GameWindow.m */; };
 		C9E9A74612C7EFAB00635372 /* FullscreenWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A74512C7EFAB00635372 /* FullscreenWindow.m */; };
+		C9E9A7CE12C80A3A00635372 /* Color3.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A7CD12C80A3A00635372 /* Color3.m */; };
+		C9E9A7E212C80AB400635372 /* Color4.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A7E112C80AB400635372 /* Color4.m */; };
+		C9E9A7FE12C80E2600635372 /* Point2.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A7FD12C80E2600635372 /* Point2.m */; };
+		C9E9A80112C80F8800635372 /* Point3.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A80012C80F8800635372 /* Point3.m */; };
+		C9E9A80C12C8112500635372 /* Angle3.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A80B12C8112500635372 /* Angle3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +38,17 @@
 		C9E9A73312C7EEC600635372 /* GameWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameWindow.m; sourceTree = "<group>"; };
 		C9E9A74412C7EFAB00635372 /* FullscreenWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullscreenWindow.h; sourceTree = "<group>"; };
 		C9E9A74512C7EFAB00635372 /* FullscreenWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullscreenWindow.m; sourceTree = "<group>"; };
+		C9E9A7CA12C80A1C00635372 /* DataTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTypes.h; sourceTree = "<group>"; };
+		C9E9A7CC12C80A3A00635372 /* Color3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color3.h; sourceTree = "<group>"; };
+		C9E9A7CD12C80A3A00635372 /* Color3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color3.m; sourceTree = "<group>"; };
+		C9E9A7E012C80AB400635372 /* Color4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color4.h; sourceTree = "<group>"; };
+		C9E9A7E112C80AB400635372 /* Color4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color4.m; sourceTree = "<group>"; };
+		C9E9A7FC12C80E2600635372 /* Point2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point2.h; sourceTree = "<group>"; };
+		C9E9A7FD12C80E2600635372 /* Point2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Point2.m; sourceTree = "<group>"; };
+		C9E9A7FF12C80F8800635372 /* Point3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point3.h; sourceTree = "<group>"; };
+		C9E9A80012C80F8800635372 /* Point3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Point3.m; sourceTree = "<group>"; };
+		C9E9A80A12C8112500635372 /* Angle3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Angle3.h; sourceTree = "<group>"; };
+		C9E9A80B12C8112500635372 /* Angle3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Angle3.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +66,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C9E9A7C912C809F800635372 /* DataTypes */,
 				C9E9A73112C7EEB100635372 /* Window */,
 				256AC3D80F4B6AC300CF3369 /* DarkmatterAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* DarkmatterAppDelegate.m */,
@@ -134,6 +151,40 @@
 			name = Window;
 			sourceTree = "<group>";
 		};
+		C9E9A7C912C809F800635372 /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				C9E9A7CA12C80A1C00635372 /* DataTypes.h */,
+				C9E9A7FB12C80E0F00635372 /* Points */,
+				C9E9A7CB12C80A2B00635372 /* Color */,
+				C9E9A80A12C8112500635372 /* Angle3.h */,
+				C9E9A80B12C8112500635372 /* Angle3.m */,
+			);
+			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		C9E9A7CB12C80A2B00635372 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				C9E9A7CC12C80A3A00635372 /* Color3.h */,
+				C9E9A7CD12C80A3A00635372 /* Color3.m */,
+				C9E9A7E012C80AB400635372 /* Color4.h */,
+				C9E9A7E112C80AB400635372 /* Color4.m */,
+			);
+			name = Color;
+			sourceTree = "<group>";
+		};
+		C9E9A7FB12C80E0F00635372 /* Points */ = {
+			isa = PBXGroup;
+			children = (
+				C9E9A7FC12C80E2600635372 /* Point2.h */,
+				C9E9A7FD12C80E2600635372 /* Point2.m */,
+				C9E9A7FF12C80F8800635372 /* Point3.h */,
+				C9E9A80012C80F8800635372 /* Point3.m */,
+			);
+			name = Points;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,6 +244,11 @@
 				256AC3DA0F4B6AC300CF3369 /* DarkmatterAppDelegate.m in Sources */,
 				C9E9A73412C7EEC600635372 /* GameWindow.m in Sources */,
 				C9E9A74612C7EFAB00635372 /* FullscreenWindow.m in Sources */,
+				C9E9A7CE12C80A3A00635372 /* Color3.m in Sources */,
+				C9E9A7E212C80AB400635372 /* Color4.m in Sources */,
+				C9E9A7FE12C80E2600635372 /* Point2.m in Sources */,
+				C9E9A80112C80F8800635372 /* Point3.m in Sources */,
+				C9E9A80C12C8112500635372 /* Angle3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
