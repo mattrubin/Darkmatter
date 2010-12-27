@@ -148,7 +148,7 @@
 				C9E9A74412C7EFAB00635372 /* FullscreenWindow.h */,
 				C9E9A74512C7EFAB00635372 /* FullscreenWindow.m */,
 			);
-			name = Window;
+			path = Window;
 			sourceTree = "<group>";
 		};
 		C9E9A7C912C809F800635372 /* DataTypes */ = {
