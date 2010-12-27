@@ -21,14 +21,14 @@
 - (id)initWithRed:(double)r green:(double)g blue:(double)b;
 + (Color3 *)colorWithRed:(double)r green:(double)g blue:(double)b;
 
-+ (Color4 *)red;
-+ (Color4 *)green;
-+ (Color4 *)blue;
-+ (Color4 *)cyan;
-+ (Color4 *)magenta;
-+ (Color4 *)yellow;
-+ (Color4 *)black;
-+ (Color4 *)white;
++ (Color3 *)red;
++ (Color3 *)green;
++ (Color3 *)blue;
++ (Color3 *)cyan;
++ (Color3 *)magenta;
++ (Color3 *)yellow;
++ (Color3 *)black;
++ (Color3 *)white;
 
 - (Color4 *)color4;
 - (Color4 *)color4WithAlpha:(double)alpha;
