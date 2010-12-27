@@ -8,7 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Camera.h"
-#import "DataTypes.h"
+#import "Point3.h"
+#import "Angle3.h"
 
 @interface PerspectiveCamera : Camera {
 	Point3 *position;
