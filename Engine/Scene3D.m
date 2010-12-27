@@ -59,7 +59,7 @@
 		glVertex3f( -5, 0, 0);
 		glVertex3f( -5, 10, 0);
     }
-    glEnd();	
+    glEnd();
 }
 
 
