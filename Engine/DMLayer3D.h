@@ -7,12 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "Scene.h"
-#import "PerspectiveCamera.h"
+#import "DMLayer.h"
+#import "DMPerspectiveCamera.h"
 
-@interface Scene3D : Scene {
-	PerspectiveCamera *camera;
+@interface DMLayer3D : DMLayer {
+	DMPerspectiveCamera *camera;
 }
-@property (retain) PerspectiveCamera *camera;
+@property (retain) DMPerspectiveCamera *camera;
 
 @end

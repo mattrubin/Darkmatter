@@ -6,10 +6,10 @@
 //  Copyright 2010. All rights reserved.
 //
 
-#import "PerspectiveCamera.h"
+#import "DMPerspectiveCamera.h"
 #import <GLUT/GLUT.h>
 
-@implementation PerspectiveCamera
+@implementation DMPerspectiveCamera
 
 @synthesize position;
 @synthesize orientation;

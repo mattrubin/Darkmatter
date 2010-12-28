@@ -7,12 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "OrthoCamera.h"
-#import "Scene.h"
+#import "DMOrthoCamera.h"
+#import "DMLayer.h"
 
-@interface Scene2D : Scene {
-	OrthoCamera *camera;
+@interface DMLayer2D : DMLayer {
+	DMOrthoCamera *camera;
 }
-@property (retain) OrthoCamera *camera;
+@property (retain) DMOrthoCamera *camera;
 
 @end

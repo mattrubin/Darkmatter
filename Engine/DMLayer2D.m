@@ -6,22 +6,22 @@
 //  Copyright 2010. All rights reserved.
 //
 
-#import "Scene2D.h"
+#import "DMLayer2D.h"
 
 
-@interface Scene2D ()
+@interface DMLayer2D ()
 - (void)prepare;
 - (void)drawObjects;
 @end
 
 
-@implementation Scene2D
+@implementation DMLayer2D
 
 @synthesize camera;
 
 - (id)init {
 	if((self = [super init])){
-		camera = [OrthoCamera new];
+		camera = [DMOrthoCamera new];
 	}
 	[self prepare];
 	return self;

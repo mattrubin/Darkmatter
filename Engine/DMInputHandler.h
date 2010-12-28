@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface InputHandler : NSObject {
+@interface DMInputHandler : NSObject {
 	BOOL left;
 	BOOL right;
 	BOOL up;

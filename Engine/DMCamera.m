@@ -6,10 +6,10 @@
 //  Copyright 2010. All rights reserved.
 //
 
-#import "Camera.h"
+#import "DMCamera.h"
 
 
-@implementation Camera
+@implementation DMCamera
 
 - (void)establishPerspectiveAtSize:(NSSize)size {
 	glMatrixMode(GL_PROJECTION);

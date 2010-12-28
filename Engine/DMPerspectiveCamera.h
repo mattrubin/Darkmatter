@@ -7,11 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "Camera.h"
+#import "DMCamera.h"
 #import "Point3.h"
 #import "Angle3.h"
 
-@interface PerspectiveCamera : Camera {
+@interface DMPerspectiveCamera : DMCamera {
 	Point3 *position;
 	Angle3 *orientation; 
 }

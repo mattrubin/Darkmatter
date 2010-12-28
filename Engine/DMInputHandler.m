@@ -6,10 +6,10 @@
 //  Copyright 2010. All rights reserved.
 //
 
-#import "InputHandler.h"
+#import "DMInputHandler.h"
 
 
-@implementation InputHandler
+@implementation DMInputHandler
 
 @synthesize left;
 @synthesize right;

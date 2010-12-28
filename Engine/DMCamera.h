@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface Camera : NSObject {}
+@interface DMCamera : NSObject {}
 
 - (void)establishPerspectiveAtSize:(NSSize)size;
 - (void)applyAtSize:(NSSize)size;

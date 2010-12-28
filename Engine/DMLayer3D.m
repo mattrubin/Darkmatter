@@ -6,22 +6,22 @@
 //  Copyright 2010. All rights reserved.
 //
 
-#import "Scene3D.h"
+#import "DMLayer3D.h"
 
 
-@interface Scene3D ()
+@interface DMLayer3D ()
 - (void)prepare;
 - (void)drawObjects;
 @end
 
 
-@implementation Scene3D
+@implementation DMLayer3D
 
 @synthesize camera;
 
 - (id)init {
 	if((self = [super init])){
-		camera = [PerspectiveCamera new];
+		camera = [DMPerspectiveCamera new];
 	}
 	[self prepare];
 	return self;

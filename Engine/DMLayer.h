@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "Color4.h"
 
-@interface Scene : NSObject {
+@interface DMLayer : NSObject {
 	Color4 *clearColor;
 	NSSize currentSize;
 	BOOL clearsOnDraw;

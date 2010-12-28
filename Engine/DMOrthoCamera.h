@@ -7,10 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "Camera.h"
+#import "DMCamera.h"
 #import "Point2.h"
 
-@interface OrthoCamera : Camera {
+@interface DMOrthoCamera : DMCamera {
 	Point2 *position;
 	double zoom;
 }

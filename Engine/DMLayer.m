@@ -6,14 +6,14 @@
 //  Copyright 2010. All rights reserved.
 //
 
-#import "Scene.h"
+#import "DMLayer.h"
 #import "OpenGL.h"
 
-@interface Scene ()
+@interface DMLayer ()
 - (void)clearView;
 @end
 
-@implementation Scene
+@implementation DMLayer
 
 @synthesize clearColor;
 @synthesize currentSize;

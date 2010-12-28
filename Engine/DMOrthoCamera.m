@@ -6,10 +6,10 @@
 //  Copyright 2010. All rights reserved.
 //
 
-#import "OrthoCamera.h"
+#import "DMOrthoCamera.h"
 
 
-@implementation OrthoCamera
+@implementation DMOrthoCamera
 
 @synthesize position;
 @synthesize zoom;

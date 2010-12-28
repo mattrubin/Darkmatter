@@ -6,10 +6,10 @@
 //  Copyright 2010. All rights reserved.
 //
 
-#import "GameController.h"
+#import "DMGameController.h"
 
 
-@implementation GameController
+@implementation DMGameController
 
 @synthesize inputHandler;
 @synthesize renderTime;
@@ -20,7 +20,7 @@
 }
 
 - (void)gameDidLoad {
-	inputHandler = [InputHandler new];
+	inputHandler = [DMInputHandler new];
 }
 
 - (void)drawAtSize:(NSSize)size
