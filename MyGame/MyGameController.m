@@ -11,19 +11,24 @@
 
 @implementation MyGameController
 
+@synthesize currentScene;
 @synthesize scene;
 @synthesize menu;
 
 - (void)gameDidLoad {
 	[super gameDidLoad];
+	currentScene = [DMScene new];
 	scene = [MyScene new];
 	menu = [MyMenu new];
+	[currentScene addLayer:scene];
+	[currentScene addLayer:menu];
 }
 
 - (void)drawAtSize:(NSSize)size
 {
-	[scene drawAtSize:size];
-	[menu drawAtSize:size];
+	[currentScene drawAtSize:size];
+	//[scene drawAtSize:size];
+	//[menu drawAtSize:size];
 }
 
 - (void)updateCamera{
