@@ -11,6 +11,7 @@
 
 @implementation DMGameController
 
+@synthesize currentScene;
 @synthesize inputHandler;
 @synthesize renderTime;
 
@@ -20,6 +21,7 @@
 }
 
 - (void)gameDidLoad {
+	currentScene = [DMScene new];
 	inputHandler = [DMInputHandler new];
 }
 
@@ -28,6 +30,7 @@
 	// Draw scene here.
 	glClearColor(1,.5,0,1);
 	glClear(GL_COLOR_BUFFER_BIT);
+	[currentScene drawAtSize:size];
 }
 
 - (void)updateCamera{
@@ -38,8 +41,10 @@
 #pragma mark Memory management
 
 - (void)dealloc {
+	self.currentScene = nil;
 	[inputHandler release];
 	inputHandler = nil;
+
 	[super dealloc];
 }
 

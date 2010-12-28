@@ -13,8 +13,8 @@
 
 - (void)prepare {
 	[super prepare];
-	self.camera.z = 15;
-	self.camera.yaw = -75;
+	self.camera.z = 12;
+	self.camera.yaw = -65;
 }	
 
 - (void)drawObjects {

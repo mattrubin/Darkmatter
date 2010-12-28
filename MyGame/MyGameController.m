@@ -11,27 +11,23 @@
 
 @implementation MyGameController
 
-@synthesize currentScene;
 @synthesize scene;
 @synthesize menu;
 
 - (void)gameDidLoad {
 	[super gameDidLoad];
-	currentScene = [DMScene new];
+
 	scene = [MyScene new];
 	menu = [MyMenu new];
-	[currentScene addLayer:scene];
-	[currentScene addLayer:menu];
+	[self.currentScene addLayer:scene];
+	[self.currentScene addLayer:menu];
 }
 
-- (void)drawAtSize:(NSSize)size
-{
-	[currentScene drawAtSize:size];
-	//[scene drawAtSize:size];
-	//[menu drawAtSize:size];
+- (void)drawAtSize:(NSSize)size {
+	[super drawAtSize:size];
 }
 
-- (void)updateCamera{
+- (void)updateCamera {
 	if(inputHandler.left)
 		self.scene.camera.x -= 0.1;
 	if(inputHandler.right)
