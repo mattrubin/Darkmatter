@@ -20,21 +20,21 @@
 		C9E9A80112C80F8800635372 /* Point3.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A80012C80F8800635372 /* Point3.m */; };
 		C9E9A80C12C8112500635372 /* Angle3.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A80B12C8112500635372 /* Angle3.m */; };
 		C9E9A8B812C83D8100635372 /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A8B712C83D8100635372 /* OpenGLView.m */; };
-		C9E9A8D012C842E600635372 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A8CF12C842E600635372 /* GameController.m */; };
+		C9E9A8D012C842E600635372 /* DMGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A8CF12C842E600635372 /* DMGameController.m */; };
 		C9E9A8DD12C8451100635372 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9A8DC12C8451100635372 /* CoreVideo.framework */; };
 		C9E9A8E412C8452500635372 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9A8E312C8452500635372 /* OpenGL.framework */; };
-		C9E9A90E12C84A7600635372 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A90D12C84A7600635372 /* InputHandler.m */; };
-		C9E9A94512C858B400635372 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A94412C858B400635372 /* Camera.m */; };
-		C9E9A94812C858FE00635372 /* OrthoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A94712C858FE00635372 /* OrthoCamera.m */; };
-		C9E9A94D12C85A6A00635372 /* PerspectiveCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A94C12C85A6A00635372 /* PerspectiveCamera.m */; };
+		C9E9A90E12C84A7600635372 /* DMInputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A90D12C84A7600635372 /* DMInputHandler.m */; };
+		C9E9A94512C858B400635372 /* DMCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A94412C858B400635372 /* DMCamera.m */; };
+		C9E9A94812C858FE00635372 /* DMOrthoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A94712C858FE00635372 /* DMOrthoCamera.m */; };
+		C9E9A94D12C85A6A00635372 /* DMPerspectiveCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A94C12C85A6A00635372 /* DMPerspectiveCamera.m */; };
 		C9E9A95512C85B0D00635372 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9A95412C85B0D00635372 /* GLUT.framework */; };
-		C9E9A96F12C85D2200635372 /* Scene3D.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A96E12C85D2200635372 /* Scene3D.m */; };
+		C9E9A96F12C85D2200635372 /* DMLayer3D.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A96E12C85D2200635372 /* DMLayer3D.m */; };
 		C9E9A97412C85DC800635372 /* OpenGL.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A97312C85DC800635372 /* OpenGL.m */; };
 		C9E9AA8812C86FE900635372 /* MyGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9AA8512C86FE900635372 /* MyGameController.m */; };
 		C9E9AA8912C86FE900635372 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9AA8712C86FE900635372 /* MyScene.m */; };
-		C9E9AB0212C8745E00635372 /* Scene2D.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9AB0112C8745E00635372 /* Scene2D.m */; };
+		C9E9AB0212C8745E00635372 /* DMLayer2D.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9AB0112C8745E00635372 /* DMLayer2D.m */; };
 		C9E9AB4012C87CC400635372 /* MyMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9AB3F12C87CC400635372 /* MyMenu.m */; };
-		C9F09FB612C94975005F6386 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F09FB512C94975005F6386 /* Scene.m */; };
+		C9F09FB612C94975005F6386 /* DMLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F09FB512C94975005F6386 /* DMLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,33 +67,33 @@
 		C9E9A80B12C8112500635372 /* Angle3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Angle3.m; sourceTree = "<group>"; };
 		C9E9A8B612C83D8100635372 /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
 		C9E9A8B712C83D8100635372 /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
-		C9E9A8CE12C842E600635372 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
-		C9E9A8CF12C842E600635372 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
+		C9E9A8CE12C842E600635372 /* DMGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMGameController.h; sourceTree = "<group>"; };
+		C9E9A8CF12C842E600635372 /* DMGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMGameController.m; sourceTree = "<group>"; };
 		C9E9A8DC12C8451100635372 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		C9E9A8E312C8452500635372 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		C9E9A90C12C84A7600635372 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
-		C9E9A90D12C84A7600635372 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
-		C9E9A94312C858B400635372 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
-		C9E9A94412C858B400635372 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
-		C9E9A94612C858FE00635372 /* OrthoCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrthoCamera.h; sourceTree = "<group>"; };
-		C9E9A94712C858FE00635372 /* OrthoCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrthoCamera.m; sourceTree = "<group>"; };
-		C9E9A94B12C85A6A00635372 /* PerspectiveCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerspectiveCamera.h; sourceTree = "<group>"; };
-		C9E9A94C12C85A6A00635372 /* PerspectiveCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerspectiveCamera.m; sourceTree = "<group>"; };
+		C9E9A90C12C84A7600635372 /* DMInputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMInputHandler.h; sourceTree = "<group>"; };
+		C9E9A90D12C84A7600635372 /* DMInputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMInputHandler.m; sourceTree = "<group>"; };
+		C9E9A94312C858B400635372 /* DMCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCamera.h; sourceTree = "<group>"; };
+		C9E9A94412C858B400635372 /* DMCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCamera.m; sourceTree = "<group>"; };
+		C9E9A94612C858FE00635372 /* DMOrthoCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMOrthoCamera.h; sourceTree = "<group>"; };
+		C9E9A94712C858FE00635372 /* DMOrthoCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMOrthoCamera.m; sourceTree = "<group>"; };
+		C9E9A94B12C85A6A00635372 /* DMPerspectiveCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMPerspectiveCamera.h; sourceTree = "<group>"; };
+		C9E9A94C12C85A6A00635372 /* DMPerspectiveCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMPerspectiveCamera.m; sourceTree = "<group>"; };
 		C9E9A95412C85B0D00635372 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
-		C9E9A96D12C85D2200635372 /* Scene3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene3D.h; sourceTree = "<group>"; };
-		C9E9A96E12C85D2200635372 /* Scene3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene3D.m; sourceTree = "<group>"; };
+		C9E9A96D12C85D2200635372 /* DMLayer3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLayer3D.h; sourceTree = "<group>"; };
+		C9E9A96E12C85D2200635372 /* DMLayer3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLayer3D.m; sourceTree = "<group>"; };
 		C9E9A97212C85DC800635372 /* OpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGL.h; sourceTree = "<group>"; };
 		C9E9A97312C85DC800635372 /* OpenGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGL.m; sourceTree = "<group>"; };
 		C9E9AA8412C86FE900635372 /* MyGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGameController.h; sourceTree = "<group>"; };
 		C9E9AA8512C86FE900635372 /* MyGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGameController.m; sourceTree = "<group>"; };
 		C9E9AA8612C86FE900635372 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		C9E9AA8712C86FE900635372 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		C9E9AB0012C8745E00635372 /* Scene2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene2D.h; sourceTree = "<group>"; };
-		C9E9AB0112C8745E00635372 /* Scene2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene2D.m; sourceTree = "<group>"; };
+		C9E9AB0012C8745E00635372 /* DMLayer2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLayer2D.h; sourceTree = "<group>"; };
+		C9E9AB0112C8745E00635372 /* DMLayer2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLayer2D.m; sourceTree = "<group>"; };
 		C9E9AB3E12C87CC400635372 /* MyMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMenu.h; sourceTree = "<group>"; };
 		C9E9AB3F12C87CC400635372 /* MyMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMenu.m; sourceTree = "<group>"; };
-		C9F09FB412C94975005F6386 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
-		C9F09FB512C94975005F6386 /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
+		C9F09FB412C94975005F6386 /* DMLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLayer.h; sourceTree = "<group>"; };
+		C9F09FB512C94975005F6386 /* DMLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,10 +253,10 @@
 		C9E9A8B912C83E0700635372 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
-				C9E9A8CE12C842E600635372 /* GameController.h */,
-				C9E9A8CF12C842E600635372 /* GameController.m */,
-				C9E9A90C12C84A7600635372 /* InputHandler.h */,
-				C9E9A90D12C84A7600635372 /* InputHandler.m */,
+				C9E9A8CE12C842E600635372 /* DMGameController.h */,
+				C9E9A8CF12C842E600635372 /* DMGameController.m */,
+				C9E9A90C12C84A7600635372 /* DMInputHandler.h */,
+				C9E9A90D12C84A7600635372 /* DMInputHandler.m */,
 				C9E9A94212C858A800635372 /* Cameras */,
 				C9E9A94112C8589300635372 /* Scenes */,
 			);
@@ -266,12 +266,12 @@
 		C9E9A94112C8589300635372 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				C9F09FB412C94975005F6386 /* Scene.h */,
-				C9F09FB512C94975005F6386 /* Scene.m */,
-				C9E9A96D12C85D2200635372 /* Scene3D.h */,
-				C9E9A96E12C85D2200635372 /* Scene3D.m */,
-				C9E9AB0012C8745E00635372 /* Scene2D.h */,
-				C9E9AB0112C8745E00635372 /* Scene2D.m */,
+				C9F09FB412C94975005F6386 /* DMLayer.h */,
+				C9F09FB512C94975005F6386 /* DMLayer.m */,
+				C9E9AB0012C8745E00635372 /* DMLayer2D.h */,
+				C9E9AB0112C8745E00635372 /* DMLayer2D.m */,
+				C9E9A96D12C85D2200635372 /* DMLayer3D.h */,
+				C9E9A96E12C85D2200635372 /* DMLayer3D.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -279,12 +279,12 @@
 		C9E9A94212C858A800635372 /* Cameras */ = {
 			isa = PBXGroup;
 			children = (
-				C9E9A94312C858B400635372 /* Camera.h */,
-				C9E9A94412C858B400635372 /* Camera.m */,
-				C9E9A94612C858FE00635372 /* OrthoCamera.h */,
-				C9E9A94712C858FE00635372 /* OrthoCamera.m */,
-				C9E9A94B12C85A6A00635372 /* PerspectiveCamera.h */,
-				C9E9A94C12C85A6A00635372 /* PerspectiveCamera.m */,
+				C9E9A94312C858B400635372 /* DMCamera.h */,
+				C9E9A94412C858B400635372 /* DMCamera.m */,
+				C9E9A94612C858FE00635372 /* DMOrthoCamera.h */,
+				C9E9A94712C858FE00635372 /* DMOrthoCamera.m */,
+				C9E9A94B12C85A6A00635372 /* DMPerspectiveCamera.h */,
+				C9E9A94C12C85A6A00635372 /* DMPerspectiveCamera.m */,
 			);
 			name = Cameras;
 			sourceTree = "<group>";
@@ -367,18 +367,18 @@
 				C9E9A80112C80F8800635372 /* Point3.m in Sources */,
 				C9E9A80C12C8112500635372 /* Angle3.m in Sources */,
 				C9E9A8B812C83D8100635372 /* OpenGLView.m in Sources */,
-				C9E9A8D012C842E600635372 /* GameController.m in Sources */,
-				C9E9A90E12C84A7600635372 /* InputHandler.m in Sources */,
-				C9E9A94512C858B400635372 /* Camera.m in Sources */,
-				C9E9A94812C858FE00635372 /* OrthoCamera.m in Sources */,
-				C9E9A94D12C85A6A00635372 /* PerspectiveCamera.m in Sources */,
-				C9E9A96F12C85D2200635372 /* Scene3D.m in Sources */,
+				C9E9A8D012C842E600635372 /* DMGameController.m in Sources */,
+				C9E9A90E12C84A7600635372 /* DMInputHandler.m in Sources */,
+				C9E9A94512C858B400635372 /* DMCamera.m in Sources */,
+				C9E9A94812C858FE00635372 /* DMOrthoCamera.m in Sources */,
+				C9E9A94D12C85A6A00635372 /* DMPerspectiveCamera.m in Sources */,
+				C9E9A96F12C85D2200635372 /* DMLayer3D.m in Sources */,
 				C9E9A97412C85DC800635372 /* OpenGL.m in Sources */,
 				C9E9AA8812C86FE900635372 /* MyGameController.m in Sources */,
 				C9E9AA8912C86FE900635372 /* MyScene.m in Sources */,
-				C9E9AB0212C8745E00635372 /* Scene2D.m in Sources */,
+				C9E9AB0212C8745E00635372 /* DMLayer2D.m in Sources */,
 				C9E9AB4012C87CC400635372 /* MyMenu.m in Sources */,
-				C9F09FB612C94975005F6386 /* Scene.m in Sources */,
+				C9F09FB612C94975005F6386 /* DMLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

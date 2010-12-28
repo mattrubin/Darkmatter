@@ -7,9 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "Scene2D.h"
+#import "DMLayer2D.h"
 
-@interface MyMenu : Scene2D {
+@interface MyMenu : DMLayer2D {
 
 }
 

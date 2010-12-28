@@ -7,9 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "Scene3D.h"
+#import "DMLayer3D.h"
 
-@interface MyScene : Scene3D {
+@interface MyScene : DMLayer3D {
 
 }
 

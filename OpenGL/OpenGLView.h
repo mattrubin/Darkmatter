@@ -8,13 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 #import <CoreVideo/CVDisplayLink.h>
-#import "GameController.h"
+#import "DMGameController.h"
 
 @interface OpenGLView : NSOpenGLView {
-	GameController *controller;
+	DMGameController *controller;
     CVDisplayLinkRef displayLink; //display link for managing rendering thread
 }
-@property (readwrite, assign) IBOutlet GameController *controller;
+@property (readwrite, assign) IBOutlet DMGameController *controller;
 
 - (void)drawView;
 

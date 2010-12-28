@@ -7,11 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "GameController.h"
+#import "DMGameController.h"
 #import "MyScene.h"
 #import "MyMenu.h"
 
-@interface MyGameController : GameController {
+@interface MyGameController : DMGameController {
 	MyScene *scene;
 	MyMenu *menu;
 }
