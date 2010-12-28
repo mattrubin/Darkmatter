@@ -12,6 +12,7 @@
 @implementation MyMenu
 
 - (void)prepare {
+	[super prepare];
 	self.clearsOnDraw = NO;
 }
 - (void)drawObjects {

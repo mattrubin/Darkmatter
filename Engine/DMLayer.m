@@ -9,9 +9,6 @@
 #import "DMLayer.h"
 #import "OpenGL.h"
 
-@interface DMLayer ()
-- (void)clearView;
-@end
 
 @implementation DMLayer
 
@@ -21,8 +18,9 @@
 
 - (id)init {
 	if((self = [super init])){
-		self.clearColor = [Color4 colorWithRed:0 green:0 blue:0 alpha:.5f];
+		self.clearColor = [Color4 colorWithRed:0 green:0 blue:0 alpha:1];
 		self.clearsOnDraw = YES;
+		[self prepare];
 	}
 	return self;
 }
@@ -30,6 +28,16 @@
 - (void)clearView {
 	[OpenGL setClearColor:clearColor];
     glClear(GL_COLOR_BUFFER_BIT);
+}
+
+- (void)prepare {
+	// Prepare camera and objects here.
+	// OVERRIDE THIS METHOD
+}
+
+- (void)drawObjects {
+	// Draw objects here.
+	// OVERRIDE THIS METHOD
 }
 
 - (void)drawAtSize:(NSSize)size {

@@ -9,28 +9,14 @@
 #import "DMLayer3D.h"
 
 
-@interface DMLayer3D ()
-- (void)prepare;
-- (void)drawObjects;
-@end
-
-
 @implementation DMLayer3D
 
 @synthesize camera;
 
-- (id)init {
-	if((self = [super init])){
-		camera = [DMPerspectiveCamera new];
-	}
-	[self prepare];
-	return self;
-}
-
 - (void)prepare {
-	// Prepare camera and objects here.
-	// OVERRIDE THIS METHOD
+	[super prepare];
 	
+	camera = [DMPerspectiveCamera new];
 	self.camera.z = 10;
 	self.camera.y = -2;
 	self.camera.yaw = -60;
@@ -38,8 +24,7 @@
 
 
 - (void)drawObjects {
-	// Draw objects here.
-	// OVERRIDE THIS METHOD
+	[super drawObjects];
 	
 	glColor3f(1.0f, 0.35f, 0.25f);
     glBegin(GL_TRIANGLES);

@@ -12,6 +12,7 @@
 @implementation MyScene
 
 - (void)prepare {
+	[super prepare];
 	self.camera.z = 15;
 	self.camera.yaw = -75;
 }	
@@ -31,7 +32,6 @@
 				glVertex3f( .5+x*a, y*a+a*.95, 0);
 			}
 		}
-		
     }
     glEnd();
 }

@@ -18,6 +18,9 @@
 @property (assign) NSSize currentSize;
 @property (assign) BOOL clearsOnDraw;
 
+- (void)clearView;
+- (void)prepare;
+- (void)drawObjects;
 - (void)drawAtSize:(NSSize)size;
 
 @end

@@ -9,33 +9,19 @@
 #import "DMLayer2D.h"
 
 
-@interface DMLayer2D ()
-- (void)prepare;
-- (void)drawObjects;
-@end
-
-
 @implementation DMLayer2D
 
 @synthesize camera;
 
-- (id)init {
-	if((self = [super init])){
-		camera = [DMOrthoCamera new];
-	}
-	[self prepare];
-	return self;
-}
-
 - (void)prepare {
-	// Prepare camera and objects here.
-	// OVERRIDE THIS METHOD
+	[super prepare];
+	
+	camera = [DMOrthoCamera new];
 }
 
 
 - (void)drawObjects {
-	// Draw objects here.
-	// OVERRIDE THIS METHOD
+	[super drawObjects];
 	
     glColor3f(0.4f, 0.3f, 1.0f);
     glBegin(GL_TRIANGLES);
