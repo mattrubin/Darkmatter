@@ -1,3 +1,6 @@
+# Project-specific
+References/
+
 # Xcode noise
 build/
 *.pbxuser
