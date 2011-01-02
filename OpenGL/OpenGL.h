@@ -14,4 +14,8 @@
 
 + (void)setClearColor:(Color4 *)color;
 
++ (void) setAlphaBlending: (BOOL) on;
++ (void) enableAlphaBlending;
++ (void) disableAlphaBlending;
+
 @end

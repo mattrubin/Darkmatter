@@ -15,4 +15,20 @@
 	glClearColor(color.red, color.green, color.blue, color.alpha);
 }
 
+
++ (void) setAlphaBlending: (BOOL) on
+{
+	if (on) {
+		glEnable(GL_BLEND);
+		glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	} else
+		glDisable(GL_BLEND);
+}
++ (void)enableAlphaBlending {
+	[[self class] setAlphaBlending:YES];
+}
++ (void)disableAlphaBlending {
+	[[self class] setAlphaBlending:NO];
+}
+
 @end
