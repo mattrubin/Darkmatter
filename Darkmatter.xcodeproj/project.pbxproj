@@ -53,6 +53,7 @@
 		8D1107320486CEB800E47090 /* Darkmatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Darkmatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C92F650112CA98F1009994F7 /* DMScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMScene.h; sourceTree = "<group>"; };
 		C92F650212CA98F1009994F7 /* DMScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMScene.m; sourceTree = "<group>"; };
+		C9B340BD12D0FFCC00BB6A79 /* DMKeyCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMKeyCodes.h; sourceTree = "<group>"; };
 		C9E9A73212C7EEC600635372 /* GameWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWindow.h; sourceTree = "<group>"; };
 		C9E9A73312C7EEC600635372 /* GameWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameWindow.m; sourceTree = "<group>"; };
 		C9E9A74412C7EFAB00635372 /* FullscreenWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullscreenWindow.h; sourceTree = "<group>"; };
@@ -206,6 +207,14 @@
 			name = Scenes;
 			sourceTree = "<group>";
 		};
+		C9B340BB12D0FFAA00BB6A79 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				C9B340BD12D0FFCC00BB6A79 /* DMKeyCodes.h */,
+			);
+			name = Input;
+			sourceTree = "<group>";
+		};
 		C9E9A73112C7EEB100635372 /* Window */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +274,7 @@
 		C9E9A8B912C83E0700635372 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				C9B340BB12D0FFAA00BB6A79 /* Input */,
 				C9E9A8CE12C842E600635372 /* DMGameController.h */,
 				C9E9A8CF12C842E600635372 /* DMGameController.m */,
 				C9E9A90C12C84A7600635372 /* DMInputHandler.h */,
