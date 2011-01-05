@@ -7,20 +7,20 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "DMKeyCodes.h"
 
+typedef unsigned short keycode;
 
 @interface DMInputHandler : NSObject {
-	BOOL left;
-	BOOL right;
-	BOOL up;
-	BOOL down;	
+	NSMutableSet *keysPressed;
+	NSMutableSet *keysDown;
 }
-@property (readonly) BOOL left;
-@property (readonly) BOOL right;
-@property (readonly) BOOL up;
-@property (readonly) BOOL down;
+
 
 - (void)keyDown:(NSEvent *)theEvent;
 - (void)keyUp:(NSEvent *)theEvent;
+
+- (BOOL)keyIsDown:(keycode)keyCode;
+- (BOOL)keyWasPressed:(keycode)keyCode;
 
 @end

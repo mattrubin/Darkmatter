@@ -11,54 +11,40 @@
 
 @implementation DMInputHandler
 
-@synthesize left;
-@synthesize right;
-@synthesize up;
-@synthesize down;
+- (id)init {
+	if((self = [super init])){
+		keysDown = [[NSMutableSet alloc] initWithCapacity:10];
+		keysPressed = [[NSMutableSet alloc] initWithCapacity:10];
+	}
+	return self;
+}
 
 - (void)keyDown:(NSEvent *)theEvent {
-	NSLog(@"key %i down", [theEvent keyCode]);
-	
-	switch ([theEvent keyCode]) {
-		case 53:
-			[[NSNotificationCenter defaultCenter] postNotificationName:@"ExitFullscreen" object:self];
-			break;
-		case 123:
-			left = YES;
-			break;
-		case 124:
-			right = YES;
-			break;
-		case 125:
-			down = YES;
-			break;
-		case 126:
-			up = YES;
-			break;
-		default:
-			break;
+	if(![keysDown containsObject:[NSNumber numberWithUnsignedShort:[theEvent keyCode]]]){
+		NSLog(@"key 0x%02x down", [theEvent keyCode]);
+		[keysDown addObject:[NSNumber numberWithUnsignedShort:[theEvent keyCode]]];
+		[keysPressed addObject:[NSNumber numberWithUnsignedShort:[theEvent keyCode]]];
 	}
 }
+
 - (void)keyUp:(NSEvent *)theEvent {
 	NSLog(@"key %i up", [theEvent keyCode]);
-	
-	switch ([theEvent keyCode]) {
-		case 123:
-			left = NO;
-			break;
-		case 124:
-			right = NO;
-			break;
-		case 125:
-			down = NO;
-			break;
-		case 126:
-			up = NO;
-			break;
-		default:
-			break;
+	[keysDown removeObject:[NSNumber numberWithUnsignedShort:[theEvent keyCode]]];
+}
+
+- (BOOL)keyIsDown:(keycode)keyCode {
+	return [keysDown containsObject:[NSNumber numberWithUnsignedShort:keyCode]];
+}
+
+- (BOOL)keyWasPressed:(keycode)keyCode {
+	if([keysPressed containsObject:[NSNumber numberWithUnsignedShort:keyCode]]) {
+		[keysPressed removeObject:[NSNumber numberWithUnsignedShort:keyCode]];
+		return YES;
+	} else {
+		return NO;
 	}
 }
+
 
 
 @end
