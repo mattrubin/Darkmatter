@@ -28,14 +28,22 @@
 }
 
 - (void)updateCamera {
-	if(inputHandler.left)
-		self.scene.camera.x -= 0.1;
-	if(inputHandler.right)
-		self.scene.camera.x += 0.1;
-	if(inputHandler.down)
-		self.scene.camera.y -= 0.1;
-	if(inputHandler.up)
-		self.scene.camera.y += 0.1;
+	DMLayer3D *s = (DMLayer3D*)[self.currentScene bottomLayer];
+	if([inputHandler keyIsDown:KEY_LEFT_ARROW])
+		s.camera.x -= 0.1;
+	if([inputHandler keyIsDown:KEY_RIGHT_ARROW])
+		s.camera.x += 0.1;
+	if([inputHandler keyIsDown:KEY_DOWN_ARROW])
+		s.camera.y -= 0.1;
+	if([inputHandler keyIsDown:KEY_UP_ARROW])
+		s.camera.y += 0.1;
+	if([inputHandler keyWasPressed:KEY_SPACEBAR]) {
+		[self pushScene:[DMScene new]];
+		[self.currentScene addLayer:[MyScene new]];
+		[self.currentScene addLayer:[MyMenu new]];
+	} else if([inputHandler keyWasPressed:KEY_DELETE]) {
+		[self popScene];
+	}
 }
 
 
