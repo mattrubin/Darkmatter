@@ -123,7 +123,7 @@
 				C9E9A8B912C83E0700635372 /* Engine */,
 				C9E9A8B512C83D6900635372 /* OpenGL */,
 				C9E9A7C912C809F800635372 /* DataTypes */,
-				C9E9A73112C7EEB100635372 /* Window */,
+				C9E9A73112C7EEB100635372 /* Windows */,
 				C9E9AA8312C86FE900635372 /* MyGame */,
 			);
 			name = Classes;
@@ -211,11 +211,13 @@
 			isa = PBXGroup;
 			children = (
 				C9B340BD12D0FFCC00BB6A79 /* DMKeyCodes.h */,
+				C9E9A90C12C84A7600635372 /* DMInputHandler.h */,
+				C9E9A90D12C84A7600635372 /* DMInputHandler.m */,
 			);
 			name = Input;
 			sourceTree = "<group>";
 		};
-		C9E9A73112C7EEB100635372 /* Window */ = {
+		C9E9A73112C7EEB100635372 /* Windows */ = {
 			isa = PBXGroup;
 			children = (
 				C9E9A73212C7EEC600635372 /* GameWindow.h */,
@@ -223,6 +225,7 @@
 				C9E9A74412C7EFAB00635372 /* FullscreenWindow.h */,
 				C9E9A74512C7EFAB00635372 /* FullscreenWindow.m */,
 			);
+			name = Windows;
 			path = Window;
 			sourceTree = "<group>";
 		};
@@ -231,14 +234,14 @@
 			children = (
 				C9E9A7CA12C80A1C00635372 /* DataTypes.h */,
 				C9E9A7FB12C80E0F00635372 /* Points */,
-				C9E9A7CB12C80A2B00635372 /* Color */,
+				C9E9A7CB12C80A2B00635372 /* Colors */,
 				C9E9A80A12C8112500635372 /* Angle3.h */,
 				C9E9A80B12C8112500635372 /* Angle3.m */,
 			);
 			path = DataTypes;
 			sourceTree = "<group>";
 		};
-		C9E9A7CB12C80A2B00635372 /* Color */ = {
+		C9E9A7CB12C80A2B00635372 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
 				C9E9A7CC12C80A3A00635372 /* Color3.h */,
@@ -246,7 +249,7 @@
 				C9E9A7E012C80AB400635372 /* Color4.h */,
 				C9E9A7E112C80AB400635372 /* Color4.m */,
 			);
-			name = Color;
+			name = Colors;
 			sourceTree = "<group>";
 		};
 		C9E9A7FB12C80E0F00635372 /* Points */ = {
@@ -263,10 +266,10 @@
 		C9E9A8B512C83D6900635372 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
-				C9E9A8B612C83D8100635372 /* OpenGLView.h */,
-				C9E9A8B712C83D8100635372 /* OpenGLView.m */,
 				C9E9A97212C85DC800635372 /* OpenGL.h */,
 				C9E9A97312C85DC800635372 /* OpenGL.m */,
+				C9E9A8B612C83D8100635372 /* OpenGLView.h */,
+				C9E9A8B712C83D8100635372 /* OpenGLView.m */,
 			);
 			path = OpenGL;
 			sourceTree = "<group>";
@@ -274,11 +277,9 @@
 		C9E9A8B912C83E0700635372 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
-				C9B340BB12D0FFAA00BB6A79 /* Input */,
 				C9E9A8CE12C842E600635372 /* DMGameController.h */,
 				C9E9A8CF12C842E600635372 /* DMGameController.m */,
-				C9E9A90C12C84A7600635372 /* DMInputHandler.h */,
-				C9E9A90D12C84A7600635372 /* DMInputHandler.m */,
+				C9B340BB12D0FFAA00BB6A79 /* Input */,
 				C9E9A94212C858A800635372 /* Cameras */,
 				C92F650012CA98DE009994F7 /* Scenes */,
 				C9E9A94112C8589300635372 /* Layers */,
