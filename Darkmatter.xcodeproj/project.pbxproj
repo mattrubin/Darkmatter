@@ -13,6 +13,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		C92F650312CA98F1009994F7 /* DMScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F650212CA98F1009994F7 /* DMScene.m */; };
+		C9CA886D12D50C5000C6C81A /* DMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CA886C12D50C5000C6C81A /* DMObject.m */; };
 		C9E9A73412C7EEC600635372 /* GameWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A73312C7EEC600635372 /* GameWindow.m */; };
 		C9E9A74612C7EFAB00635372 /* FullscreenWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A74512C7EFAB00635372 /* FullscreenWindow.m */; };
 		C9E9A7CE12C80A3A00635372 /* Color3.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A7CD12C80A3A00635372 /* Color3.m */; };
@@ -54,6 +55,8 @@
 		C92F650112CA98F1009994F7 /* DMScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMScene.h; sourceTree = "<group>"; };
 		C92F650212CA98F1009994F7 /* DMScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMScene.m; sourceTree = "<group>"; };
 		C9B340BD12D0FFCC00BB6A79 /* DMKeyCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMKeyCodes.h; sourceTree = "<group>"; };
+		C9CA886B12D50C5000C6C81A /* DMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMObject.h; sourceTree = "<group>"; };
+		C9CA886C12D50C5000C6C81A /* DMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMObject.m; sourceTree = "<group>"; };
 		C9E9A73212C7EEC600635372 /* GameWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWindow.h; sourceTree = "<group>"; };
 		C9E9A73312C7EEC600635372 /* GameWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameWindow.m; sourceTree = "<group>"; };
 		C9E9A74412C7EFAB00635372 /* FullscreenWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullscreenWindow.h; sourceTree = "<group>"; };
@@ -217,6 +220,15 @@
 			name = Input;
 			sourceTree = "<group>";
 		};
+		C9CA886A12D50C4200C6C81A /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				C9CA886B12D50C5000C6C81A /* DMObject.h */,
+				C9CA886C12D50C5000C6C81A /* DMObject.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
 		C9E9A73112C7EEB100635372 /* Windows */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +295,7 @@
 				C9E9A94212C858A800635372 /* Cameras */,
 				C92F650012CA98DE009994F7 /* Scenes */,
 				C9E9A94112C8589300635372 /* Layers */,
+				C9CA886A12D50C4200C6C81A /* Objects */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -404,6 +417,7 @@
 				C9E9AB4012C87CC400635372 /* MyMenu.m in Sources */,
 				C9F09FB612C94975005F6386 /* DMLayer.m in Sources */,
 				C92F650312CA98F1009994F7 /* DMScene.m in Sources */,
+				C9CA886D12D50C5000C6C81A /* DMObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
