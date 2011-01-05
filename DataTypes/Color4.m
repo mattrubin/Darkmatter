@@ -10,11 +10,17 @@
 #import "Color3.h"
 
 @implementation Color4
+
+#pragma mark Properties
 @synthesize red;
 @synthesize green;
 @synthesize blue;
 @synthesize alpha;
 
+- (double)luminance {
+	//coefficients taken from libst/STColor3f.cpp
+	return .2126f*self.red + .7152f*self.green + .0722f*self.blue;
+}
 
 #pragma mark Initializers
 
@@ -28,6 +34,16 @@
 	return self;
 }
 
+- (id)initWithRed:(double)r green:(double)g blue:(double)b {
+	if((self = [super init])){
+		red   = r;
+		green = g;
+		blue  = b;
+		alpha = 1;
+	}
+	return self;
+}
+
 - (id)initWithRed:(double)r green:(double)g blue:(double)b alpha:(double)a {
 	if((self = [super init])){
 		red   = r;
@@ -37,6 +53,38 @@
 	}
 	return self;
 }
+
+- (id)initWithBrightness:(double)b {
+	if((self = [super init])){
+		red   = b;
+		green = b;
+		blue  = b;
+		alpha = 1;
+	}
+	return self;
+}
+
+
+- (id)initWithColor3:(Color3*)c {
+	if((self = [super init])){
+		red   = c.red;
+		green = c.green;
+		blue  = c.blue;
+		alpha = 1;
+	}
+	return self;
+}
+
+- (id)initWithColor4:(Color4*)c {
+	if((self = [super init])){
+		red   = c.red;
+		green = c.green;
+		blue  = c.blue;
+		alpha = c.alpha;
+	}
+	return self;
+}
+
 
 
 #pragma mark Class methods

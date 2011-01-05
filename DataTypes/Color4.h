@@ -17,9 +17,15 @@
 @property (assign) double green;
 @property (assign) double blue;
 @property (assign) double alpha;
+@property (readonly) double luminance;
 
 
+- (id)initWithRed:(double)r green:(double)g blue:(double)b;
 - (id)initWithRed:(double)r green:(double)g blue:(double)b alpha:(double)a;
+- (id)initWithBrightness:(double)b;
+- (id)initWithColor3:(Color3*)c;
+- (id)initWithColor4:(Color4*)c;
+
 + (Color4 *)colorWithRed:(double)r green:(double)g blue:(double)b alpha:(double)a;
 
 + (Color4 *)red;
