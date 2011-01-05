@@ -11,13 +11,13 @@
 #import "DMScene.h"
 
 @interface DMGameController : NSObject {
-	DMScene *currentScene;
 	DMInputHandler *inputHandler;
+	NSMutableArray *sceneStack;
 
 	CFAbsoluteTime renderTime;
 }
 
-@property (retain) DMScene *currentScene;
+@property (assign) DMScene *currentScene;
 @property (readonly) DMInputHandler *inputHandler;
 @property (readwrite, assign) CFAbsoluteTime renderTime;
 
@@ -28,5 +28,11 @@
 - (void)advanceTimeBy:(double)delta;
 
 - (void)drawAtSize:(NSSize)size;
+
+
+- (void)pushScene:(DMScene*)scene;
+- (void)popScene;
+- (void)replaceScene:(DMScene*)scene;
+
 
 @end

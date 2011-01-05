@@ -11,7 +11,7 @@
 
 @implementation DMGameController
 
-@synthesize currentScene;
+//@synthesize currentScene;
 @synthesize inputHandler;
 @synthesize renderTime;
 
@@ -21,16 +21,56 @@
 }
 
 - (void)gameDidLoad {
-	currentScene = [DMScene new];
 	inputHandler = [DMInputHandler new];
+	sceneStack = [[NSMutableArray alloc] initWithCapacity:10];
+	self.currentScene = [DMScene new];
 }
+
+
+
+
+
+- (DMScene*)currentScene {
+	return [sceneStack lastObject];
+}
+- (void)setCurrentScene:(DMScene*)scene {
+	[self replaceScene:scene];
+}
+
+
+#pragma mark Scene Management
+
+- (void)pushScene:(DMScene*)scene {
+	NSAssert( scene != nil, @"Argument must be non-nil");
+	[sceneStack addObject: scene];
+}
+
+- (void)popScene {
+	NSAssert( self.currentScene != nil, @"A running Scene is needed");
+	[sceneStack removeLastObject];
+}
+
+- (void)replaceScene:(DMScene*)scene {
+	NSAssert(scene != nil, @"Argument must be non-nil");
+	NSUInteger index = [sceneStack count];
+	if(index > 0){
+		[sceneStack replaceObjectAtIndex:index-1 withObject:scene];
+	} else {
+		[self pushScene:scene];
+	}
+}
+
+
+
+
+
 
 - (void)drawAtSize:(NSSize)size
 {
 	// Draw scene here.
 	glClearColor(1,.5,0,1);
 	glClear(GL_COLOR_BUFFER_BIT);
-	[currentScene drawAtSize:size];
+	[self.currentScene drawAtSize:size];
 }
 
 - (void)updateCamera{
@@ -41,7 +81,7 @@
 #pragma mark Memory management
 
 - (void)dealloc {
-	self.currentScene = nil;
+	[sceneStack release];
 	[inputHandler release];
 	inputHandler = nil;
 
