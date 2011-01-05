@@ -36,10 +36,10 @@
 }
 
 - (void)applyTransformations {
-	glRotatef(orientation.roll, 0, 0, 1);
+	glTranslated(position.x, position.y, position.z);
+	glRotatef(orientation.roll, 0, 1, 0);
 	glRotatef(orientation.yaw, 1, 0, 0);
 	glRotatef(orientation.pitch, 0, 0, 1);
-	glTranslated(position.x, position.y, position.z);
 }
 
 - (void)drawObject {
