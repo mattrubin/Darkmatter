@@ -18,4 +18,7 @@
 + (void) enableAlphaBlending;
 + (void) disableAlphaBlending;
 
++ (void)enableDepthTesting;
++ (void)disableDepthTesting;
+
 @end

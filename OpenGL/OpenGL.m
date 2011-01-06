@@ -31,4 +31,15 @@
 	[[self class] setAlphaBlending:NO];
 }
 
++ (void)enableDepthTesting {
+	glEnable(GL_DEPTH_TEST);
+	glDepthFunc(GL_LEQUAL);
+	glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
+}
+
++ (void)disableDepthTesting {
+	glDisable(GL_DEPTH_TEST);
+}
+
+
 @end

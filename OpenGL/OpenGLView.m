@@ -62,6 +62,7 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 	
 	//Enable alpha belnding
 	[OpenGL enableAlphaBlending];
+	[OpenGL enableDepthTesting];
 
 	[controller gameDidLoad];
 	
