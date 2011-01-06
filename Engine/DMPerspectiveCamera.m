@@ -57,8 +57,8 @@
 	[super applyAtSize:size];
 	
 	glRotatef(orientation.roll, 0, 1, 0);
-	glRotatef(-90-orientation.yaw, 1, 0, 0);
-	glRotatef(orientation.pitch, 0, 0, 1);
+	glRotatef(-90-orientation.pitch, 1, 0, 0);
+	glRotatef(orientation.yaw, 0, 0, 1);
 	glTranslated(-position.x, -position.y, -position.z);
 }
 

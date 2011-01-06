@@ -19,7 +19,7 @@
 	camera = [DMPerspectiveCamera new];
 	self.camera.z = 10;
 	self.camera.y = -2;
-	self.camera.yaw = -60;
+	self.camera.pitch = -60;
 }
 
 
