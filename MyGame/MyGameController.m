@@ -28,15 +28,29 @@
 }
 
 - (void)updateCamera {
-	DMLayer3D *s = (DMLayer3D*)[self.currentScene bottomLayer];
+	MyScene *s = (MyScene*)[self.currentScene bottomLayer];
 	if([inputHandler keyIsDown:KEY_LEFT_ARROW])
-		s.camera.x -= 0.1;
+		s.obj.x -= .1;
 	if([inputHandler keyIsDown:KEY_RIGHT_ARROW])
-		s.camera.x += 0.1;
+		s.obj.x += .1;
 	if([inputHandler keyIsDown:KEY_DOWN_ARROW])
-		s.camera.y -= 0.1;
+		s.obj.y -= .1;
 	if([inputHandler keyIsDown:KEY_UP_ARROW])
-		s.camera.y += 0.1;
+		s.obj.y += .1;
+	
+	if([inputHandler keyIsDown:KEY_W])
+		s.camera.pitch += 1;
+	if([inputHandler keyIsDown:KEY_S])
+		s.camera.pitch -= 1;
+	if([inputHandler keyIsDown:KEY_A])
+		s.camera.yaw -= 1;
+	if([inputHandler keyIsDown:KEY_D])
+		s.camera.yaw += 1;
+	if([inputHandler keyIsDown:KEY_Q])
+		s.camera.roll -= 1;
+	if([inputHandler keyIsDown:KEY_E])
+		s.camera.roll += 1;
+	
 	if([inputHandler keyWasPressed:KEY_SPACEBAR]) {
 		[self pushScene:[DMScene new]];
 		[self.currentScene addLayer:[MyScene new]];

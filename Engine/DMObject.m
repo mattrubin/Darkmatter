@@ -37,9 +37,9 @@
 
 - (void)applyTransformations {
 	glTranslated(position.x, position.y, position.z);
+	glRotatef(orientation.yaw, 0, 0, 1);
+	glRotatef(orientation.pitch, 1, 0, 0);
 	glRotatef(orientation.roll, 0, 1, 0);
-	glRotatef(orientation.yaw, 1, 0, 0);
-	glRotatef(orientation.pitch, 0, 0, 1);
 }
 
 - (void)drawObject {

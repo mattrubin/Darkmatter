@@ -8,9 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 #import "DMLayer3D.h"
+#import "DMObject.h"
 
 @interface MyScene : DMLayer3D {
-
+	DMObject *obj;
 }
+@property (readonly) DMObject *obj;
 
 @end

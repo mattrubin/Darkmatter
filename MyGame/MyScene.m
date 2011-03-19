@@ -7,20 +7,22 @@
 //
 
 #import "MyScene.h"
-
+#import "OpenGL.h"
 
 @implementation MyScene
+
+@synthesize obj;
 
 - (void)prepare {
 	[super prepare];
 	self.camera.z = 12;
-	self.camera.yaw = -65;
+	obj = [DMObject new];
 }	
 
 - (void)drawObjects {
 	glColor3f(0.65f, 1.0f, 0.45f);
     glBegin(GL_TRIANGLES);
-    {
+	{
 		for(int x=-20; x<20; x++){
 			for(int y=-20; y<20; y++){
 				float a = 1;
@@ -32,8 +34,10 @@
 				glVertex3f( .5+x*a, y*a+a*.95, 0);
 			}
 		}
-    }
+	}
     glEnd();
+	
+	[obj draw];
 }
 
 @end
