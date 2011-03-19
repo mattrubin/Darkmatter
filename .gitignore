@@ -1,7 +1,11 @@
 # Project-specific
 References/
 
-# Xcode noise
+# Xcode 4
+*.xcworkspace/
+xcuserdata/
+
+# Xcode 3
 build/
 *.pbxuser
 *.mode1v3
@@ -11,7 +15,7 @@ build/
 *.pyc 
 *~.nib/
 
-# OSX noise
+# Mac OS X
 .DS_Store
 profile
 
