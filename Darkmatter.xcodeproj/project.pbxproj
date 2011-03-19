@@ -3,446 +3,282 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		256AC3DA0F4B6AC300CF3369 /* DarkmatterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* DarkmatterAppDelegate.m */; };
-		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
-		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		C92F650312CA98F1009994F7 /* DMScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C92F650212CA98F1009994F7 /* DMScene.m */; };
-		C9CA886D12D50C5000C6C81A /* DMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CA886C12D50C5000C6C81A /* DMObject.m */; };
-		C9E9A73412C7EEC600635372 /* GameWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A73312C7EEC600635372 /* GameWindow.m */; };
-		C9E9A74612C7EFAB00635372 /* FullscreenWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A74512C7EFAB00635372 /* FullscreenWindow.m */; };
-		C9E9A7CE12C80A3A00635372 /* Color3.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A7CD12C80A3A00635372 /* Color3.m */; };
-		C9E9A7E212C80AB400635372 /* Color4.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A7E112C80AB400635372 /* Color4.m */; };
-		C9E9A7FE12C80E2600635372 /* Point2.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A7FD12C80E2600635372 /* Point2.m */; };
-		C9E9A80112C80F8800635372 /* Point3.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A80012C80F8800635372 /* Point3.m */; };
-		C9E9A80C12C8112500635372 /* Angle3.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A80B12C8112500635372 /* Angle3.m */; };
-		C9E9A8B812C83D8100635372 /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A8B712C83D8100635372 /* OpenGLView.m */; };
-		C9E9A8D012C842E600635372 /* DMGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A8CF12C842E600635372 /* DMGameController.m */; };
-		C9E9A8DD12C8451100635372 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9A8DC12C8451100635372 /* CoreVideo.framework */; };
-		C9E9A8E412C8452500635372 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9A8E312C8452500635372 /* OpenGL.framework */; };
-		C9E9A90E12C84A7600635372 /* DMInputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A90D12C84A7600635372 /* DMInputHandler.m */; };
-		C9E9A94512C858B400635372 /* DMCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A94412C858B400635372 /* DMCamera.m */; };
-		C9E9A94812C858FE00635372 /* DMOrthoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A94712C858FE00635372 /* DMOrthoCamera.m */; };
-		C9E9A94D12C85A6A00635372 /* DMPerspectiveCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A94C12C85A6A00635372 /* DMPerspectiveCamera.m */; };
-		C9E9A95512C85B0D00635372 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E9A95412C85B0D00635372 /* GLUT.framework */; };
-		C9E9A96F12C85D2200635372 /* DMLayer3D.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A96E12C85D2200635372 /* DMLayer3D.m */; };
-		C9E9A97412C85DC800635372 /* OpenGL.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9A97312C85DC800635372 /* OpenGL.m */; };
-		C9E9AA8812C86FE900635372 /* MyGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9AA8512C86FE900635372 /* MyGameController.m */; };
-		C9E9AA8912C86FE900635372 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9AA8712C86FE900635372 /* MyScene.m */; };
-		C9E9AB0212C8745E00635372 /* DMLayer2D.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9AB0112C8745E00635372 /* DMLayer2D.m */; };
-		C9E9AB4012C87CC400635372 /* MyMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E9AB3F12C87CC400635372 /* MyMenu.m */; };
-		C9F09FB612C94975005F6386 /* DMLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F09FB512C94975005F6386 /* DMLayer.m */; };
+		C99DAA4E1334346500221DE0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99DAA4D1334346500221DE0 /* Cocoa.framework */; };
+		C99DAA581334346500221DE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C99DAA561334346500221DE0 /* InfoPlist.strings */; };
+		C99DAA651334347900221DE0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99DAA4D1334346500221DE0 /* Cocoa.framework */; };
+		C99DAA6B1334347900221DE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C99DAA691334347900221DE0 /* InfoPlist.strings */; };
+		C99DAA6E1334347900221DE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAA6D1334347900221DE0 /* main.m */; };
+		C99DAA711334347900221DE0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C99DAA6F1334347900221DE0 /* Credits.rtf */; };
+		C99DAA741334347900221DE0 /* DarkmatterDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAA731334347900221DE0 /* DarkmatterDemoAppDelegate.m */; };
+		C99DAA771334347900221DE0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99DAA751334347900221DE0 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
-		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		256AC3D80F4B6AC300CF3369 /* DarkmatterAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkmatterAppDelegate.h; sourceTree = "<group>"; };
-		256AC3D90F4B6AC300CF3369 /* DarkmatterAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarkmatterAppDelegate.m; sourceTree = "<group>"; };
-		256AC3F00F4B6AF500CF3369 /* Darkmatter_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Darkmatter_Prefix.pch; sourceTree = "<group>"; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		8D1107310486CEB800E47090 /* Darkmatter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Darkmatter-Info.plist"; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* Darkmatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Darkmatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C92F650112CA98F1009994F7 /* DMScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMScene.h; sourceTree = "<group>"; };
-		C92F650212CA98F1009994F7 /* DMScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMScene.m; sourceTree = "<group>"; };
-		C9B340BD12D0FFCC00BB6A79 /* DMKeyCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMKeyCodes.h; sourceTree = "<group>"; };
-		C9CA886B12D50C5000C6C81A /* DMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMObject.h; sourceTree = "<group>"; };
-		C9CA886C12D50C5000C6C81A /* DMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMObject.m; sourceTree = "<group>"; };
-		C9E9A73212C7EEC600635372 /* GameWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWindow.h; sourceTree = "<group>"; };
-		C9E9A73312C7EEC600635372 /* GameWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameWindow.m; sourceTree = "<group>"; };
-		C9E9A74412C7EFAB00635372 /* FullscreenWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullscreenWindow.h; sourceTree = "<group>"; };
-		C9E9A74512C7EFAB00635372 /* FullscreenWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullscreenWindow.m; sourceTree = "<group>"; };
-		C9E9A7CA12C80A1C00635372 /* DataTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTypes.h; sourceTree = "<group>"; };
-		C9E9A7CC12C80A3A00635372 /* Color3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color3.h; sourceTree = "<group>"; };
-		C9E9A7CD12C80A3A00635372 /* Color3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color3.m; sourceTree = "<group>"; };
-		C9E9A7E012C80AB400635372 /* Color4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color4.h; sourceTree = "<group>"; };
-		C9E9A7E112C80AB400635372 /* Color4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Color4.m; sourceTree = "<group>"; };
-		C9E9A7FC12C80E2600635372 /* Point2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point2.h; sourceTree = "<group>"; };
-		C9E9A7FD12C80E2600635372 /* Point2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Point2.m; sourceTree = "<group>"; };
-		C9E9A7FF12C80F8800635372 /* Point3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point3.h; sourceTree = "<group>"; };
-		C9E9A80012C80F8800635372 /* Point3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Point3.m; sourceTree = "<group>"; };
-		C9E9A80A12C8112500635372 /* Angle3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Angle3.h; sourceTree = "<group>"; };
-		C9E9A80B12C8112500635372 /* Angle3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Angle3.m; sourceTree = "<group>"; };
-		C9E9A8B612C83D8100635372 /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
-		C9E9A8B712C83D8100635372 /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
-		C9E9A8CE12C842E600635372 /* DMGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMGameController.h; sourceTree = "<group>"; };
-		C9E9A8CF12C842E600635372 /* DMGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMGameController.m; sourceTree = "<group>"; };
-		C9E9A8DC12C8451100635372 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		C9E9A8E312C8452500635372 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		C9E9A90C12C84A7600635372 /* DMInputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMInputHandler.h; sourceTree = "<group>"; };
-		C9E9A90D12C84A7600635372 /* DMInputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMInputHandler.m; sourceTree = "<group>"; };
-		C9E9A94312C858B400635372 /* DMCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCamera.h; sourceTree = "<group>"; };
-		C9E9A94412C858B400635372 /* DMCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCamera.m; sourceTree = "<group>"; };
-		C9E9A94612C858FE00635372 /* DMOrthoCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMOrthoCamera.h; sourceTree = "<group>"; };
-		C9E9A94712C858FE00635372 /* DMOrthoCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMOrthoCamera.m; sourceTree = "<group>"; };
-		C9E9A94B12C85A6A00635372 /* DMPerspectiveCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMPerspectiveCamera.h; sourceTree = "<group>"; };
-		C9E9A94C12C85A6A00635372 /* DMPerspectiveCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMPerspectiveCamera.m; sourceTree = "<group>"; };
-		C9E9A95412C85B0D00635372 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
-		C9E9A96D12C85D2200635372 /* DMLayer3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLayer3D.h; sourceTree = "<group>"; };
-		C9E9A96E12C85D2200635372 /* DMLayer3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLayer3D.m; sourceTree = "<group>"; };
-		C9E9A97212C85DC800635372 /* OpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGL.h; sourceTree = "<group>"; };
-		C9E9A97312C85DC800635372 /* OpenGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGL.m; sourceTree = "<group>"; };
-		C9E9AA8412C86FE900635372 /* MyGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGameController.h; sourceTree = "<group>"; };
-		C9E9AA8512C86FE900635372 /* MyGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGameController.m; sourceTree = "<group>"; };
-		C9E9AA8612C86FE900635372 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
-		C9E9AA8712C86FE900635372 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		C9E9AB0012C8745E00635372 /* DMLayer2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLayer2D.h; sourceTree = "<group>"; };
-		C9E9AB0112C8745E00635372 /* DMLayer2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLayer2D.m; sourceTree = "<group>"; };
-		C9E9AB3E12C87CC400635372 /* MyMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMenu.h; sourceTree = "<group>"; };
-		C9E9AB3F12C87CC400635372 /* MyMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMenu.m; sourceTree = "<group>"; };
-		C9F09FB412C94975005F6386 /* DMLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMLayer.h; sourceTree = "<group>"; };
-		C9F09FB512C94975005F6386 /* DMLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMLayer.m; sourceTree = "<group>"; };
+		C99DAA4A1334346500221DE0 /* Darkmatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Darkmatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99DAA4D1334346500221DE0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C99DAA501334346500221DE0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C99DAA511334346500221DE0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C99DAA521334346500221DE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C99DAA551334346500221DE0 /* Darkmatter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Darkmatter-Info.plist"; sourceTree = "<group>"; };
+		C99DAA571334346500221DE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C99DAA591334346500221DE0 /* Darkmatter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Darkmatter-Prefix.pch"; sourceTree = "<group>"; };
+		C99DAA631334347900221DE0 /* DarkmatterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkmatterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99DAA681334347900221DE0 /* DarkmatterDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DarkmatterDemo-Info.plist"; sourceTree = "<group>"; };
+		C99DAA6A1334347900221DE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C99DAA6C1334347900221DE0 /* DarkmatterDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DarkmatterDemo-Prefix.pch"; sourceTree = "<group>"; };
+		C99DAA6D1334347900221DE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C99DAA701334347900221DE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C99DAA721334347900221DE0 /* DarkmatterDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DarkmatterDemoAppDelegate.h; sourceTree = "<group>"; };
+		C99DAA731334347900221DE0 /* DarkmatterDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DarkmatterDemoAppDelegate.m; sourceTree = "<group>"; };
+		C99DAA761334347900221DE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8D11072E0486CEB800E47090 /* Frameworks */ = {
+		C99DAA461334346500221DE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				C9E9A8DD12C8451100635372 /* CoreVideo.framework in Frameworks */,
-				C9E9A8E412C8452500635372 /* OpenGL.framework in Frameworks */,
-				C9E9A95512C85B0D00635372 /* GLUT.framework in Frameworks */,
+				C99DAA4E1334346500221DE0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C99DAA601334347900221DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99DAA651334347900221DE0 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Classes */ = {
+		C99DAA3E1334346500221DE0 = {
 			isa = PBXGroup;
 			children = (
-				256AC3D80F4B6AC300CF3369 /* DarkmatterAppDelegate.h */,
-				256AC3D90F4B6AC300CF3369 /* DarkmatterAppDelegate.m */,
-				C9E9A8B912C83E0700635372 /* Engine */,
-				C9E9A8B512C83D6900635372 /* OpenGL */,
-				C9E9A7C912C809F800635372 /* DataTypes */,
-				C9E9A73112C7EEB100635372 /* Windows */,
-				C9E9AA8312C86FE900635372 /* MyGame */,
+				C99DAA531334346500221DE0 /* Darkmatter */,
+				C99DAA661334347900221DE0 /* DarkmatterDemo */,
+				C99DAA4C1334346500221DE0 /* Frameworks */,
+				C99DAA4B1334346500221DE0 /* Products */,
 			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
-		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+		C99DAA4B1334346500221DE0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
-			);
-			name = "Linked Frameworks";
-			sourceTree = "<group>";
-		};
-		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
-				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
-				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		19C28FACFE9D520D11CA2CBB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8D1107320486CEB800E47090 /* Darkmatter.app */,
+				C99DAA4A1334346500221DE0 /* Darkmatter.framework */,
+				C99DAA631334347900221DE0 /* DarkmatterDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* Darkmatter */ = {
+		C99DAA4C1334346500221DE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				080E96DDFE201D6D7F000001 /* Classes */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
-				29B97317FDCFA39411CA2CEA /* Resources */,
-				29B97323FDCFA39411CA2CEA /* Frameworks */,
-				19C28FACFE9D520D11CA2CBB /* Products */,
-			);
-			name = Darkmatter;
-			sourceTree = "<group>";
-		};
-		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				256AC3F00F4B6AF500CF3369 /* Darkmatter_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
-			);
-			name = "Other Sources";
-			sourceTree = "<group>";
-		};
-		29B97317FDCFA39411CA2CEA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				8D1107310486CEB800E47090 /* Darkmatter-Info.plist */,
-				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
-				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
-				C9E9A8DC12C8451100635372 /* CoreVideo.framework */,
-				C9E9A8E312C8452500635372 /* OpenGL.framework */,
-				C9E9A95412C85B0D00635372 /* GLUT.framework */,
+				C99DAA4D1334346500221DE0 /* Cocoa.framework */,
+				C99DAA4F1334346500221DE0 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C92F650012CA98DE009994F7 /* Scenes */ = {
+		C99DAA4F1334346500221DE0 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C92F650112CA98F1009994F7 /* DMScene.h */,
-				C92F650212CA98F1009994F7 /* DMScene.m */,
+				C99DAA501334346500221DE0 /* AppKit.framework */,
+				C99DAA511334346500221DE0 /* CoreData.framework */,
+				C99DAA521334346500221DE0 /* Foundation.framework */,
 			);
-			name = Scenes;
+			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		C9B340BB12D0FFAA00BB6A79 /* Input */ = {
+		C99DAA531334346500221DE0 /* Darkmatter */ = {
 			isa = PBXGroup;
 			children = (
-				C9B340BD12D0FFCC00BB6A79 /* DMKeyCodes.h */,
-				C9E9A90C12C84A7600635372 /* DMInputHandler.h */,
-				C9E9A90D12C84A7600635372 /* DMInputHandler.m */,
+				C99DAA541334346500221DE0 /* Supporting Files */,
 			);
-			name = Input;
+			path = Darkmatter;
 			sourceTree = "<group>";
 		};
-		C9CA886A12D50C4200C6C81A /* Objects */ = {
+		C99DAA541334346500221DE0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C9CA886B12D50C5000C6C81A /* DMObject.h */,
-				C9CA886C12D50C5000C6C81A /* DMObject.m */,
+				C99DAA551334346500221DE0 /* Darkmatter-Info.plist */,
+				C99DAA561334346500221DE0 /* InfoPlist.strings */,
+				C99DAA591334346500221DE0 /* Darkmatter-Prefix.pch */,
 			);
-			name = Objects;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C9E9A73112C7EEB100635372 /* Windows */ = {
+		C99DAA661334347900221DE0 /* DarkmatterDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C9E9A73212C7EEC600635372 /* GameWindow.h */,
-				C9E9A73312C7EEC600635372 /* GameWindow.m */,
-				C9E9A74412C7EFAB00635372 /* FullscreenWindow.h */,
-				C9E9A74512C7EFAB00635372 /* FullscreenWindow.m */,
+				C99DAA721334347900221DE0 /* DarkmatterDemoAppDelegate.h */,
+				C99DAA731334347900221DE0 /* DarkmatterDemoAppDelegate.m */,
+				C99DAA751334347900221DE0 /* MainMenu.xib */,
+				C99DAA671334347900221DE0 /* Supporting Files */,
 			);
-			name = Windows;
-			path = Window;
+			path = DarkmatterDemo;
 			sourceTree = "<group>";
 		};
-		C9E9A7C912C809F800635372 /* DataTypes */ = {
+		C99DAA671334347900221DE0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C9E9A7CA12C80A1C00635372 /* DataTypes.h */,
-				C9E9A7FB12C80E0F00635372 /* Points */,
-				C9E9A7CB12C80A2B00635372 /* Colors */,
-				C9E9A80A12C8112500635372 /* Angle3.h */,
-				C9E9A80B12C8112500635372 /* Angle3.m */,
+				C99DAA681334347900221DE0 /* DarkmatterDemo-Info.plist */,
+				C99DAA691334347900221DE0 /* InfoPlist.strings */,
+				C99DAA6C1334347900221DE0 /* DarkmatterDemo-Prefix.pch */,
+				C99DAA6D1334347900221DE0 /* main.m */,
+				C99DAA6F1334347900221DE0 /* Credits.rtf */,
 			);
-			path = DataTypes;
-			sourceTree = "<group>";
-		};
-		C9E9A7CB12C80A2B00635372 /* Colors */ = {
-			isa = PBXGroup;
-			children = (
-				C9E9A7CC12C80A3A00635372 /* Color3.h */,
-				C9E9A7CD12C80A3A00635372 /* Color3.m */,
-				C9E9A7E012C80AB400635372 /* Color4.h */,
-				C9E9A7E112C80AB400635372 /* Color4.m */,
-			);
-			name = Colors;
-			sourceTree = "<group>";
-		};
-		C9E9A7FB12C80E0F00635372 /* Points */ = {
-			isa = PBXGroup;
-			children = (
-				C9E9A7FC12C80E2600635372 /* Point2.h */,
-				C9E9A7FD12C80E2600635372 /* Point2.m */,
-				C9E9A7FF12C80F8800635372 /* Point3.h */,
-				C9E9A80012C80F8800635372 /* Point3.m */,
-			);
-			name = Points;
-			sourceTree = "<group>";
-		};
-		C9E9A8B512C83D6900635372 /* OpenGL */ = {
-			isa = PBXGroup;
-			children = (
-				C9E9A97212C85DC800635372 /* OpenGL.h */,
-				C9E9A97312C85DC800635372 /* OpenGL.m */,
-				C9E9A8B612C83D8100635372 /* OpenGLView.h */,
-				C9E9A8B712C83D8100635372 /* OpenGLView.m */,
-			);
-			path = OpenGL;
-			sourceTree = "<group>";
-		};
-		C9E9A8B912C83E0700635372 /* Engine */ = {
-			isa = PBXGroup;
-			children = (
-				C9E9A8CE12C842E600635372 /* DMGameController.h */,
-				C9E9A8CF12C842E600635372 /* DMGameController.m */,
-				C9B340BB12D0FFAA00BB6A79 /* Input */,
-				C9E9A94212C858A800635372 /* Cameras */,
-				C92F650012CA98DE009994F7 /* Scenes */,
-				C9E9A94112C8589300635372 /* Layers */,
-				C9CA886A12D50C4200C6C81A /* Objects */,
-			);
-			path = Engine;
-			sourceTree = "<group>";
-		};
-		C9E9A94112C8589300635372 /* Layers */ = {
-			isa = PBXGroup;
-			children = (
-				C9F09FB412C94975005F6386 /* DMLayer.h */,
-				C9F09FB512C94975005F6386 /* DMLayer.m */,
-				C9E9AB0012C8745E00635372 /* DMLayer2D.h */,
-				C9E9AB0112C8745E00635372 /* DMLayer2D.m */,
-				C9E9A96D12C85D2200635372 /* DMLayer3D.h */,
-				C9E9A96E12C85D2200635372 /* DMLayer3D.m */,
-			);
-			name = Layers;
-			sourceTree = "<group>";
-		};
-		C9E9A94212C858A800635372 /* Cameras */ = {
-			isa = PBXGroup;
-			children = (
-				C9E9A94312C858B400635372 /* DMCamera.h */,
-				C9E9A94412C858B400635372 /* DMCamera.m */,
-				C9E9A94612C858FE00635372 /* DMOrthoCamera.h */,
-				C9E9A94712C858FE00635372 /* DMOrthoCamera.m */,
-				C9E9A94B12C85A6A00635372 /* DMPerspectiveCamera.h */,
-				C9E9A94C12C85A6A00635372 /* DMPerspectiveCamera.m */,
-			);
-			name = Cameras;
-			sourceTree = "<group>";
-		};
-		C9E9AA8312C86FE900635372 /* MyGame */ = {
-			isa = PBXGroup;
-			children = (
-				C9E9AA8412C86FE900635372 /* MyGameController.h */,
-				C9E9AA8512C86FE900635372 /* MyGameController.m */,
-				C9E9AA8612C86FE900635372 /* MyScene.h */,
-				C9E9AA8712C86FE900635372 /* MyScene.m */,
-				C9E9AB3E12C87CC400635372 /* MyMenu.h */,
-				C9E9AB3F12C87CC400635372 /* MyMenu.m */,
-			);
-			path = MyGame;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		C99DAA471334346500221DE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		8D1107260486CEB800E47090 /* Darkmatter */ = {
+		C99DAA491334346500221DE0 /* Darkmatter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Darkmatter" */;
+			buildConfigurationList = C99DAA5C1334346500221DE0 /* Build configuration list for PBXNativeTarget "Darkmatter" */;
 			buildPhases = (
-				8D1107290486CEB800E47090 /* Resources */,
-				8D11072C0486CEB800E47090 /* Sources */,
-				8D11072E0486CEB800E47090 /* Frameworks */,
+				C99DAA451334346500221DE0 /* Sources */,
+				C99DAA461334346500221DE0 /* Frameworks */,
+				C99DAA471334346500221DE0 /* Headers */,
+				C99DAA481334346500221DE0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Darkmatter;
-			productInstallPath = "$(HOME)/Applications";
 			productName = Darkmatter;
-			productReference = 8D1107320486CEB800E47090 /* Darkmatter.app */;
+			productReference = C99DAA4A1334346500221DE0 /* Darkmatter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C99DAA621334347900221DE0 /* DarkmatterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C99DAA781334347900221DE0 /* Build configuration list for PBXNativeTarget "DarkmatterDemo" */;
+			buildPhases = (
+				C99DAA5F1334347900221DE0 /* Sources */,
+				C99DAA601334347900221DE0 /* Frameworks */,
+				C99DAA611334347900221DE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DarkmatterDemo;
+			productName = DarkmatterDemo;
+			productReference = C99DAA631334347900221DE0 /* DarkmatterDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		29B97313FDCFA39411CA2CEA /* Project object */ = {
+		C99DAA401334346500221DE0 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Darkmatter" */;
-			compatibilityVersion = "Xcode 3.1";
+			attributes = {
+				ORGANIZATIONNAME = "Matt Rubin";
+			};
+			buildConfigurationList = C99DAA431334346500221DE0 /* Build configuration list for PBXProject "Darkmatter" */;
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
-			hasScannedForEncodings = 1;
+			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
+				en,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA /* Darkmatter */;
+			mainGroup = C99DAA3E1334346500221DE0;
+			productRefGroup = C99DAA4B1334346500221DE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* Darkmatter */,
+				C99DAA491334346500221DE0 /* Darkmatter */,
+				C99DAA621334347900221DE0 /* DarkmatterDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8D1107290486CEB800E47090 /* Resources */ = {
+		C99DAA481334346500221DE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
-				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				C99DAA581334346500221DE0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C99DAA611334347900221DE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99DAA6B1334347900221DE0 /* InfoPlist.strings in Resources */,
+				C99DAA711334347900221DE0 /* Credits.rtf in Resources */,
+				C99DAA771334347900221DE0 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8D11072C0486CEB800E47090 /* Sources */ = {
+		C99DAA451334346500221DE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				256AC3DA0F4B6AC300CF3369 /* DarkmatterAppDelegate.m in Sources */,
-				C9E9A73412C7EEC600635372 /* GameWindow.m in Sources */,
-				C9E9A74612C7EFAB00635372 /* FullscreenWindow.m in Sources */,
-				C9E9A7CE12C80A3A00635372 /* Color3.m in Sources */,
-				C9E9A7E212C80AB400635372 /* Color4.m in Sources */,
-				C9E9A7FE12C80E2600635372 /* Point2.m in Sources */,
-				C9E9A80112C80F8800635372 /* Point3.m in Sources */,
-				C9E9A80C12C8112500635372 /* Angle3.m in Sources */,
-				C9E9A8B812C83D8100635372 /* OpenGLView.m in Sources */,
-				C9E9A8D012C842E600635372 /* DMGameController.m in Sources */,
-				C9E9A90E12C84A7600635372 /* DMInputHandler.m in Sources */,
-				C9E9A94512C858B400635372 /* DMCamera.m in Sources */,
-				C9E9A94812C858FE00635372 /* DMOrthoCamera.m in Sources */,
-				C9E9A94D12C85A6A00635372 /* DMPerspectiveCamera.m in Sources */,
-				C9E9A96F12C85D2200635372 /* DMLayer3D.m in Sources */,
-				C9E9A97412C85DC800635372 /* OpenGL.m in Sources */,
-				C9E9AA8812C86FE900635372 /* MyGameController.m in Sources */,
-				C9E9AA8912C86FE900635372 /* MyScene.m in Sources */,
-				C9E9AB0212C8745E00635372 /* DMLayer2D.m in Sources */,
-				C9E9AB4012C87CC400635372 /* MyMenu.m in Sources */,
-				C9F09FB612C94975005F6386 /* DMLayer.m in Sources */,
-				C92F650312CA98F1009994F7 /* DMScene.m in Sources */,
-				C9CA886D12D50C5000C6C81A /* DMObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C99DAA5F1334347900221DE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99DAA6E1334347900221DE0 /* main.m in Sources */,
+				C99DAA741334347900221DE0 /* DarkmatterDemoAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+		C99DAA561334346500221DE0 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C165DFE840E0CC02AAC07 /* English */,
+				C99DAA571334346500221DE0 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+		C99DAA691334347900221DE0 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1DDD58150DA1D0A300B32029 /* English */,
+				C99DAA6A1334347900221DE0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C99DAA6F1334347900221DE0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99DAA701334347900221DE0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C99DAA751334347900221DE0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C99DAA761334347900221DE0 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -450,85 +286,132 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C01FCF4B08A954540054247B /* Debug */ = {
+		C99DAA5A1334346500221DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C99DAA5B1334346500221DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C99DAA5D1334346500221DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Darkmatter/Darkmatter-Prefix.pch";
+				INFOPLIST_FILE = "Darkmatter/Darkmatter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		C99DAA5E1334346500221DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Darkmatter/Darkmatter-Prefix.pch";
+				INFOPLIST_FILE = "Darkmatter/Darkmatter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		C99DAA791334347900221DE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Darkmatter_Prefix.pch;
-				INFOPLIST_FILE = "Darkmatter-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = Darkmatter;
+				GCC_PREFIX_HEADER = "DarkmatterDemo/DarkmatterDemo-Prefix.pch";
+				INFOPLIST_FILE = "DarkmatterDemo/DarkmatterDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		C01FCF4C08A954540054247B /* Release */ = {
+		C99DAA7A1334347900221DE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_MODEL_TUNING = G5;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Darkmatter_Prefix.pch;
-				INFOPLIST_FILE = "Darkmatter-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = Darkmatter;
-			};
-			name = Release;
-		};
-		C01FCF4F08A954540054247B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
-			};
-			name = Debug;
-		};
-		C01FCF5008A954540054247B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				GCC_PREFIX_HEADER = "DarkmatterDemo/DarkmatterDemo-Prefix.pch";
+				INFOPLIST_FILE = "DarkmatterDemo/DarkmatterDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Darkmatter" */ = {
+		C99DAA431334346500221DE0 /* Build configuration list for PBXProject "Darkmatter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C01FCF4B08A954540054247B /* Debug */,
-				C01FCF4C08A954540054247B /* Release */,
+				C99DAA5A1334346500221DE0 /* Debug */,
+				C99DAA5B1334346500221DE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Darkmatter" */ = {
+		C99DAA5C1334346500221DE0 /* Build configuration list for PBXNativeTarget "Darkmatter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C01FCF4F08A954540054247B /* Debug */,
-				C01FCF5008A954540054247B /* Release */,
+				C99DAA5D1334346500221DE0 /* Debug */,
+				C99DAA5E1334346500221DE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+		};
+		C99DAA781334347900221DE0 /* Build configuration list for PBXNativeTarget "DarkmatterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C99DAA791334347900221DE0 /* Debug */,
+				C99DAA7A1334347900221DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+	rootObject = C99DAA401334346500221DE0 /* Project object */;
 }
