@@ -4,6 +4,7 @@
 
 An OpenGL-based game engine written in Objective-C.
 
-The Engine/ directory contains the base classes from which the example classes in MyGame/ inherit.
+The Darkmatter/ directory contains the source for the Darkmatter engine.
+The Xcode project compiles the engine as a framework, which is linked to by the demo app in the DarkmatterDemo/ directory.
 
 The latest version of the source can be found at [https://github.com/mattrubin/Darkmatter](https://github.com/mattrubin/Darkmatter).
