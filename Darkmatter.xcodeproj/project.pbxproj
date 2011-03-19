@@ -17,6 +17,9 @@
 		C99DAA771334347900221DE0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99DAA751334347900221DE0 /* MainMenu.xib */; };
 		C99DAA931334558300221DE0 /* Darkmatter.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C99DAA4A1334346500221DE0 /* Darkmatter.framework */; };
 		C99DAA9D1334578500221DE0 /* Darkmatter.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAA9C1334578500221DE0 /* Darkmatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C99DAAA413345E4700221DE0 /* MyGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAA9F13345E4500221DE0 /* MyGameController.m */; };
+		C99DAAA513345E4700221DE0 /* MyMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAA113345E4500221DE0 /* MyMenu.m */; };
+		C99DAAA613345E4700221DE0 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAA313345E4600221DE0 /* MyScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,12 @@
 		C99DAA731334347900221DE0 /* DarkmatterDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DarkmatterDemoAppDelegate.m; sourceTree = "<group>"; };
 		C99DAA761334347900221DE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C99DAA9C1334578500221DE0 /* Darkmatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Darkmatter.h; sourceTree = "<group>"; };
+		C99DAA9E13345E4400221DE0 /* MyGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGameController.h; sourceTree = "<group>"; };
+		C99DAA9F13345E4500221DE0 /* MyGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGameController.m; sourceTree = "<group>"; };
+		C99DAAA013345E4500221DE0 /* MyMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMenu.h; sourceTree = "<group>"; };
+		C99DAAA113345E4500221DE0 /* MyMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMenu.m; sourceTree = "<group>"; };
+		C99DAAA213345E4600221DE0 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		C99DAAA313345E4600221DE0 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +154,12 @@
 			children = (
 				C99DAA721334347900221DE0 /* DarkmatterDemoAppDelegate.h */,
 				C99DAA731334347900221DE0 /* DarkmatterDemoAppDelegate.m */,
+				C99DAA9E13345E4400221DE0 /* MyGameController.h */,
+				C99DAA9F13345E4500221DE0 /* MyGameController.m */,
+				C99DAAA013345E4500221DE0 /* MyMenu.h */,
+				C99DAAA113345E4500221DE0 /* MyMenu.m */,
+				C99DAAA213345E4600221DE0 /* MyScene.h */,
+				C99DAAA313345E4600221DE0 /* MyScene.m */,
 				C99DAA751334347900221DE0 /* MainMenu.xib */,
 				C99DAA671334347900221DE0 /* Supporting Files */,
 			);
@@ -275,6 +290,9 @@
 			files = (
 				C99DAA6E1334347900221DE0 /* main.m in Sources */,
 				C99DAA741334347900221DE0 /* DarkmatterDemoAppDelegate.m in Sources */,
+				C99DAAA413345E4700221DE0 /* MyGameController.m in Sources */,
+				C99DAAA513345E4700221DE0 /* MyMenu.m in Sources */,
+				C99DAAA613345E4700221DE0 /* MyScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
