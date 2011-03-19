@@ -15,7 +15,32 @@
 		C99DAA711334347900221DE0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C99DAA6F1334347900221DE0 /* Credits.rtf */; };
 		C99DAA741334347900221DE0 /* DarkmatterDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAA731334347900221DE0 /* DarkmatterDemoAppDelegate.m */; };
 		C99DAA771334347900221DE0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99DAA751334347900221DE0 /* MainMenu.xib */; };
+		C99DAA931334558300221DE0 /* Darkmatter.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C99DAA4A1334346500221DE0 /* Darkmatter.framework */; };
+		C99DAA9D1334578500221DE0 /* Darkmatter.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAA9C1334578500221DE0 /* Darkmatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C99DAA9A1334572600221DE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C99DAA401334346500221DE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C99DAA491334346500221DE0;
+			remoteInfo = Darkmatter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C99DAA921334557400221DE0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C99DAA931334558300221DE0 /* Darkmatter.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C99DAA4A1334346500221DE0 /* Darkmatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Darkmatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +60,7 @@
 		C99DAA721334347900221DE0 /* DarkmatterDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DarkmatterDemoAppDelegate.h; sourceTree = "<group>"; };
 		C99DAA731334347900221DE0 /* DarkmatterDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DarkmatterDemoAppDelegate.m; sourceTree = "<group>"; };
 		C99DAA761334347900221DE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C99DAA9C1334578500221DE0 /* Darkmatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Darkmatter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				C99DAA541334346500221DE0 /* Supporting Files */,
+				C99DAA9C1334578500221DE0 /* Darkmatter.h */,
 			);
 			path = Darkmatter;
 			sourceTree = "<group>";
@@ -143,6 +170,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99DAA9D1334578500221DE0 /* Darkmatter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +199,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C99DAA781334347900221DE0 /* Build configuration list for PBXNativeTarget "DarkmatterDemo" */;
 			buildPhases = (
+				C99DAA921334557400221DE0 /* CopyFiles */,
 				C99DAA5F1334347900221DE0 /* Sources */,
 				C99DAA601334347900221DE0 /* Frameworks */,
 				C99DAA611334347900221DE0 /* Resources */,
@@ -178,6 +207,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C99DAA9B1334572600221DE0 /* PBXTargetDependency */,
 			);
 			name = DarkmatterDemo;
 			productName = DarkmatterDemo;
@@ -249,6 +279,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C99DAA9B1334572600221DE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C99DAA491334346500221DE0 /* Darkmatter */;
+			targetProxy = C99DAA9A1334572600221DE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C99DAA561334346500221DE0 /* InfoPlist.strings */ = {
@@ -402,6 +440,7 @@
 				C99DAA5E1334346500221DE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C99DAA781334347900221DE0 /* Build configuration list for PBXNativeTarget "DarkmatterDemo" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +449,7 @@
 				C99DAA7A1334347900221DE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
