@@ -28,7 +28,7 @@
 	NSEnumerator *enumerator = [layers objectEnumerator];
 	DMLayer *layer;
 	
-	while (layer = (DMLayer *)[enumerator nextObject]) {
+	while ((layer = (DMLayer *)[enumerator nextObject])) {
 		[layer drawAtSize:size];
 	}
 }

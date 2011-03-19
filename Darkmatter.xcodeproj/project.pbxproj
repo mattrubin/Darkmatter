@@ -58,6 +58,8 @@
 		C99DAAFF1334617900221DE0 /* Point2.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAADB1334617900221DE0 /* Point2.m */; };
 		C99DAB001334617900221DE0 /* Point3.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAADC1334617900221DE0 /* Point3.h */; };
 		C99DAB011334617900221DE0 /* Point3.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAADD1334617900221DE0 /* Point3.m */; };
+		C99DAB03133461D400221DE0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99DAB02133461D400221DE0 /* OpenGL.framework */; };
+		C99DAB051334622100221DE0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99DAB041334622100221DE0 /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +150,8 @@
 		C99DAADB1334617900221DE0 /* Point2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Point2.m; sourceTree = "<group>"; };
 		C99DAADC1334617900221DE0 /* Point3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point3.h; sourceTree = "<group>"; };
 		C99DAADD1334617900221DE0 /* Point3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Point3.m; sourceTree = "<group>"; };
+		C99DAB02133461D400221DE0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C99DAB041334622100221DE0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99DAB051334622100221DE0 /* CoreVideo.framework in Frameworks */,
+				C99DAB03133461D400221DE0 /* OpenGL.framework in Frameworks */,
 				C99DAA4E1334346500221DE0 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				C99DAA4D1334346500221DE0 /* Cocoa.framework */,
+				C99DAB02133461D400221DE0 /* OpenGL.framework */,
+				C99DAB041334622100221DE0 /* CoreVideo.framework */,
 				C99DAA4F1334346500221DE0 /* Other Frameworks */,
 			);
 			name = Frameworks;
