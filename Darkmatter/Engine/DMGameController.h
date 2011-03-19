@@ -6,6 +6,7 @@
 //  Copyright 2010. All rights reserved.
 //
 
+#pragma once
 #import <Cocoa/Cocoa.h>
 #import "DMInputHandler.h"
 #import "DMScene.h"

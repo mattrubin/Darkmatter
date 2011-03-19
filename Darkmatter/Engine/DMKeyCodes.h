@@ -6,6 +6,7 @@
 //  Copyright 2011 Stanford University. All rights reserved.
 //
 
+#pragma once
 #import <Cocoa/Cocoa.h>
 
 #define KEY_A					0x00

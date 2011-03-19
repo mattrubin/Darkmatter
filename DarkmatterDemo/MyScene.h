@@ -6,9 +6,10 @@
 //  Copyright 2010. All rights reserved.
 //
 
+#pragma once
 #import <Cocoa/Cocoa.h>
-#import "DMLayer3D.h"
-#import "DMObject.h"
+#import <Darkmatter/DMLayer3D.h>
+#import <Darkmatter/DMObject.h>
 
 @interface MyScene : DMLayer3D {
 	DMObject *obj;

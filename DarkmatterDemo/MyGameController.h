@@ -6,8 +6,9 @@
 //  Copyright 2010. All rights reserved.
 //
 
+#pragma once
 #import <Cocoa/Cocoa.h>
-#import "DMGameController.h"
+#import <Darkmatter/DMGameController.h>
 #import "MyScene.h"
 #import "MyMenu.h"
 

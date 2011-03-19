@@ -15,55 +15,56 @@
 		C99DAA711334347900221DE0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C99DAA6F1334347900221DE0 /* Credits.rtf */; };
 		C99DAA741334347900221DE0 /* DarkmatterDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAA731334347900221DE0 /* DarkmatterDemoAppDelegate.m */; };
 		C99DAA771334347900221DE0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99DAA751334347900221DE0 /* MainMenu.xib */; };
-		C99DAA931334558300221DE0 /* Darkmatter.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C99DAA4A1334346500221DE0 /* Darkmatter.framework */; };
 		C99DAA9D1334578500221DE0 /* Darkmatter.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAA9C1334578500221DE0 /* Darkmatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAA413345E4700221DE0 /* MyGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAA9F13345E4500221DE0 /* MyGameController.m */; };
 		C99DAAA513345E4700221DE0 /* MyMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAA113345E4500221DE0 /* MyMenu.m */; };
 		C99DAAA613345E4700221DE0 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAA313345E4600221DE0 /* MyScene.m */; };
 		C99DAAB51334616400221DE0 /* FullscreenWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAB21334616400221DE0 /* FullscreenWindow.m */; };
 		C99DAAB61334616400221DE0 /* GameWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAB41334616400221DE0 /* GameWindow.m */; };
-		C99DAADE1334617900221DE0 /* DMCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAB81334617900221DE0 /* DMCamera.h */; };
+		C99DAADE1334617900221DE0 /* DMCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAB81334617900221DE0 /* DMCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAADF1334617900221DE0 /* DMCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAB91334617900221DE0 /* DMCamera.m */; };
-		C99DAAE01334617900221DE0 /* DMGameController.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAABA1334617900221DE0 /* DMGameController.h */; };
+		C99DAAE01334617900221DE0 /* DMGameController.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAABA1334617900221DE0 /* DMGameController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAE11334617900221DE0 /* DMGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAABB1334617900221DE0 /* DMGameController.m */; };
-		C99DAAE21334617900221DE0 /* DMInputHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAABC1334617900221DE0 /* DMInputHandler.h */; };
+		C99DAAE21334617900221DE0 /* DMInputHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAABC1334617900221DE0 /* DMInputHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAE31334617900221DE0 /* DMInputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAABD1334617900221DE0 /* DMInputHandler.m */; };
-		C99DAAE41334617900221DE0 /* DMKeyCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAABE1334617900221DE0 /* DMKeyCodes.h */; };
-		C99DAAE51334617900221DE0 /* DMLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAABF1334617900221DE0 /* DMLayer.h */; };
+		C99DAAE41334617900221DE0 /* DMKeyCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAABE1334617900221DE0 /* DMKeyCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C99DAAE51334617900221DE0 /* DMLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAABF1334617900221DE0 /* DMLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAE61334617900221DE0 /* DMLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAC01334617900221DE0 /* DMLayer.m */; };
-		C99DAAE71334617900221DE0 /* DMLayer2D.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAC11334617900221DE0 /* DMLayer2D.h */; };
+		C99DAAE71334617900221DE0 /* DMLayer2D.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAC11334617900221DE0 /* DMLayer2D.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAE81334617900221DE0 /* DMLayer2D.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAC21334617900221DE0 /* DMLayer2D.m */; };
-		C99DAAE91334617900221DE0 /* DMLayer3D.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAC31334617900221DE0 /* DMLayer3D.h */; };
+		C99DAAE91334617900221DE0 /* DMLayer3D.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAC31334617900221DE0 /* DMLayer3D.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAEA1334617900221DE0 /* DMLayer3D.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAC41334617900221DE0 /* DMLayer3D.m */; };
-		C99DAAEB1334617900221DE0 /* DMObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAC51334617900221DE0 /* DMObject.h */; };
+		C99DAAEB1334617900221DE0 /* DMObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAC51334617900221DE0 /* DMObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAEC1334617900221DE0 /* DMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAC61334617900221DE0 /* DMObject.m */; };
-		C99DAAED1334617900221DE0 /* DMOrthoCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAC71334617900221DE0 /* DMOrthoCamera.h */; };
+		C99DAAED1334617900221DE0 /* DMOrthoCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAC71334617900221DE0 /* DMOrthoCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAEE1334617900221DE0 /* DMOrthoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAC81334617900221DE0 /* DMOrthoCamera.m */; };
-		C99DAAEF1334617900221DE0 /* DMPerspectiveCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAC91334617900221DE0 /* DMPerspectiveCamera.h */; };
+		C99DAAEF1334617900221DE0 /* DMPerspectiveCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAC91334617900221DE0 /* DMPerspectiveCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAF01334617900221DE0 /* DMPerspectiveCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAACA1334617900221DE0 /* DMPerspectiveCamera.m */; };
-		C99DAAF11334617900221DE0 /* DMScene.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAACB1334617900221DE0 /* DMScene.h */; };
+		C99DAAF11334617900221DE0 /* DMScene.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAACB1334617900221DE0 /* DMScene.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAF21334617900221DE0 /* DMScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAACC1334617900221DE0 /* DMScene.m */; };
-		C99DAAF31334617900221DE0 /* OpenGL.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAACE1334617900221DE0 /* OpenGL.h */; };
+		C99DAAF31334617900221DE0 /* OpenGL.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAACE1334617900221DE0 /* OpenGL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAF41334617900221DE0 /* OpenGL.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAACF1334617900221DE0 /* OpenGL.m */; };
-		C99DAAF51334617900221DE0 /* OpenGLView.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAD01334617900221DE0 /* OpenGLView.h */; };
+		C99DAAF51334617900221DE0 /* OpenGLView.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAD01334617900221DE0 /* OpenGLView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAF61334617900221DE0 /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAD11334617900221DE0 /* OpenGLView.m */; };
-		C99DAAF71334617900221DE0 /* Angle3.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAD31334617900221DE0 /* Angle3.h */; };
+		C99DAAF71334617900221DE0 /* Angle3.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAD31334617900221DE0 /* Angle3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAF81334617900221DE0 /* Angle3.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAD41334617900221DE0 /* Angle3.m */; };
-		C99DAAF91334617900221DE0 /* Color3.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAD51334617900221DE0 /* Color3.h */; };
+		C99DAAF91334617900221DE0 /* Color3.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAD51334617900221DE0 /* Color3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAFA1334617900221DE0 /* Color3.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAD61334617900221DE0 /* Color3.m */; };
-		C99DAAFB1334617900221DE0 /* Color4.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAD71334617900221DE0 /* Color4.h */; };
+		C99DAAFB1334617900221DE0 /* Color4.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAD71334617900221DE0 /* Color4.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAFC1334617900221DE0 /* Color4.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAD81334617900221DE0 /* Color4.m */; };
-		C99DAAFD1334617900221DE0 /* DataTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAD91334617900221DE0 /* DataTypes.h */; };
-		C99DAAFE1334617900221DE0 /* Point2.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAADA1334617900221DE0 /* Point2.h */; };
+		C99DAAFD1334617900221DE0 /* DataTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAD91334617900221DE0 /* DataTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C99DAAFE1334617900221DE0 /* Point2.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAADA1334617900221DE0 /* Point2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAFF1334617900221DE0 /* Point2.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAADB1334617900221DE0 /* Point2.m */; };
-		C99DAB001334617900221DE0 /* Point3.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAADC1334617900221DE0 /* Point3.h */; };
+		C99DAB001334617900221DE0 /* Point3.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAADC1334617900221DE0 /* Point3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAB011334617900221DE0 /* Point3.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAADD1334617900221DE0 /* Point3.m */; };
 		C99DAB03133461D400221DE0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99DAB02133461D400221DE0 /* OpenGL.framework */; };
 		C99DAB051334622100221DE0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99DAB041334622100221DE0 /* CoreVideo.framework */; };
+		C99DAB061334696000221DE0 /* Darkmatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99DAA4A1334346500221DE0 /* Darkmatter.framework */; };
+		C99DAB09133469B900221DE0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99DAB02133461D400221DE0 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C99DAA9A1334572600221DE0 /* PBXContainerItemProxy */ = {
+		C99DAB0A133469C700221DE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C99DAA401334346500221DE0 /* Project object */;
 			proxyType = 1;
@@ -79,7 +80,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C99DAA931334558300221DE0 /* Darkmatter.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +169,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99DAB061334696000221DE0 /* Darkmatter.framework in Frameworks */,
 				C99DAA651334347900221DE0 /* Cocoa.framework in Frameworks */,
+				C99DAB09133469B900221DE0 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,13 +323,13 @@
 		C99DAAD21334617900221DE0 /* DataTypes */ = {
 			isa = PBXGroup;
 			children = (
+				C99DAAD91334617900221DE0 /* DataTypes.h */,
 				C99DAAD31334617900221DE0 /* Angle3.h */,
 				C99DAAD41334617900221DE0 /* Angle3.m */,
 				C99DAAD51334617900221DE0 /* Color3.h */,
 				C99DAAD61334617900221DE0 /* Color3.m */,
 				C99DAAD71334617900221DE0 /* Color4.h */,
 				C99DAAD81334617900221DE0 /* Color4.m */,
-				C99DAAD91334617900221DE0 /* DataTypes.h */,
 				C99DAADA1334617900221DE0 /* Point2.h */,
 				C99DAADB1334617900221DE0 /* Point2.m */,
 				C99DAADC1334617900221DE0 /* Point3.h */,
@@ -399,7 +401,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C99DAA9B1334572600221DE0 /* PBXTargetDependency */,
+				C99DAB0B133469C700221DE0 /* PBXTargetDependency */,
 			);
 			name = DarkmatterDemo;
 			productName = DarkmatterDemo;
@@ -495,10 +497,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C99DAA9B1334572600221DE0 /* PBXTargetDependency */ = {
+		C99DAB0B133469C700221DE0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C99DAA491334346500221DE0 /* Darkmatter */;
-			targetProxy = C99DAA9A1334572600221DE0 /* PBXContainerItemProxy */;
+			targetProxy = C99DAB0A133469C700221DE0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

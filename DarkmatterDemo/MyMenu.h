@@ -6,8 +6,9 @@
 //  Copyright 2010. All rights reserved.
 //
 
+#pragma once
 #import <Cocoa/Cocoa.h>
-#import "DMLayer2D.h"
+#import <Darkmatter/DMLayer2D.h>
 
 @interface MyMenu : DMLayer2D {
 

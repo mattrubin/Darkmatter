@@ -6,6 +6,7 @@
 //  Copyright 2011. All rights reserved.
 //
 
+#pragma once
 #import <Cocoa/Cocoa.h>
 #import "Point3.h"
 #import "Angle3.h"

@@ -7,7 +7,7 @@
 //
 
 #import "MyScene.h"
-#import "OpenGL.h"
+#import <Darkmatter/OpenGL.h>
 
 @implementation MyScene
 
