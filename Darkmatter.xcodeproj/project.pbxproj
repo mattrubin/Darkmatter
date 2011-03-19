@@ -59,8 +59,9 @@
 		C99DAB011334617900221DE0 /* Point3.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAADD1334617900221DE0 /* Point3.m */; };
 		C99DAB03133461D400221DE0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99DAB02133461D400221DE0 /* OpenGL.framework */; };
 		C99DAB051334622100221DE0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99DAB041334622100221DE0 /* CoreVideo.framework */; };
-		C99DAB061334696000221DE0 /* Darkmatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99DAA4A1334346500221DE0 /* Darkmatter.framework */; };
 		C99DAB09133469B900221DE0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99DAB02133461D400221DE0 /* OpenGL.framework */; };
+		C99DAB0D13346F6700221DE0 /* Darkmatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99DAA4A1334346500221DE0 /* Darkmatter.framework */; };
+		C99DAB0E1334714E00221DE0 /* Darkmatter.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C99DAA4A1334346500221DE0 /* Darkmatter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C99DAB0E1334714E00221DE0 /* Darkmatter.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C99DAB061334696000221DE0 /* Darkmatter.framework in Frameworks */,
+				C99DAB0D13346F6700221DE0 /* Darkmatter.framework in Frameworks */,
 				C99DAA651334347900221DE0 /* Cocoa.framework in Frameworks */,
 				C99DAB09133469B900221DE0 /* OpenGL.framework in Frameworks */,
 			);
@@ -584,6 +586,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Darkmatter/Darkmatter-Prefix.pch";
 				INFOPLIST_FILE = "Darkmatter/Darkmatter-Info.plist";
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -602,6 +606,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Darkmatter/Darkmatter-Prefix.pch";
 				INFOPLIST_FILE = "Darkmatter/Darkmatter-Info.plist";
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -617,6 +623,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DarkmatterDemo/DarkmatterDemo-Prefix.pch";
 				INFOPLIST_FILE = "DarkmatterDemo/DarkmatterDemo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -632,6 +639,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DarkmatterDemo/DarkmatterDemo-Prefix.pch";
 				INFOPLIST_FILE = "DarkmatterDemo/DarkmatterDemo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
