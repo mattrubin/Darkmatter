@@ -18,6 +18,7 @@ build/
 # Mac OS X
 .DS_Store
 profile
+.LSOverride
 
 # Textmate - if you build your xcode projects with it
 *.tm_build_errors
