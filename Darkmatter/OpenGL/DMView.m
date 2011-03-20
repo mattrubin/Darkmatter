@@ -1,16 +1,16 @@
 //
-//  OpenGLView.m
+//  DMView.m
 //  Darkmatter
 //
 //  Created by Matt Rubin on 12/26/10.
 //  Copyright 2010. All rights reserved.
 //
 
-#import "OpenGLView.h"
+#import "DMView.h"
 #import "OpenGL.h"
 
 
-@implementation OpenGLView
+@implementation DMView
 @synthesize controller;
 
 - (void)drawView {
@@ -52,7 +52,7 @@
 // This is the renderer output callback function
 static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTimeStamp* now, const CVTimeStamp* outputTime, CVOptionFlags flagsIn, CVOptionFlags* flagsOut, void* displayLinkContext)
 {
-	CVReturn result = [(OpenGLView*)displayLinkContext getFrameForTime:outputTime];
+	CVReturn result = [(DMView*)displayLinkContext getFrameForTime:outputTime];
 	return result;
 }
 

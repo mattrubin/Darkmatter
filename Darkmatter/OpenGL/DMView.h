@@ -1,5 +1,5 @@
 //
-//  OpenGLView.h
+//  DMView.h
 //  Darkmatter
 //
 //  Created by Matt Rubin on 12/26/10.
@@ -11,7 +11,7 @@
 #import <CoreVideo/CVDisplayLink.h>
 #import "DMGameController.h"
 
-@interface OpenGLView : NSOpenGLView {
+@interface DMView : NSOpenGLView {
 	DMGameController *controller;
     CVDisplayLinkRef displayLink; //display link for managing rendering thread
 }

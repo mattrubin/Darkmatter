@@ -44,8 +44,8 @@
 		C99DAAF21334617900221DE0 /* DMScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAACC1334617900221DE0 /* DMScene.m */; };
 		C99DAAF31334617900221DE0 /* OpenGL.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAACE1334617900221DE0 /* OpenGL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAF41334617900221DE0 /* OpenGL.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAACF1334617900221DE0 /* OpenGL.m */; };
-		C99DAAF51334617900221DE0 /* OpenGLView.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAD01334617900221DE0 /* OpenGLView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C99DAAF61334617900221DE0 /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAD11334617900221DE0 /* OpenGLView.m */; };
+		C99DAAF51334617900221DE0 /* DMView.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAD01334617900221DE0 /* DMView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C99DAAF61334617900221DE0 /* DMView.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAD11334617900221DE0 /* DMView.m */; };
 		C99DAAF71334617900221DE0 /* Angle3.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAD31334617900221DE0 /* Angle3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99DAAF81334617900221DE0 /* Angle3.m in Sources */ = {isa = PBXBuildFile; fileRef = C99DAAD41334617900221DE0 /* Angle3.m */; };
 		C99DAAF91334617900221DE0 /* Color3.h in Headers */ = {isa = PBXBuildFile; fileRef = C99DAAD51334617900221DE0 /* Color3.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -139,8 +139,8 @@
 		C99DAACC1334617900221DE0 /* DMScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMScene.m; sourceTree = "<group>"; };
 		C99DAACE1334617900221DE0 /* OpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGL.h; sourceTree = "<group>"; };
 		C99DAACF1334617900221DE0 /* OpenGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGL.m; sourceTree = "<group>"; };
-		C99DAAD01334617900221DE0 /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
-		C99DAAD11334617900221DE0 /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
+		C99DAAD01334617900221DE0 /* DMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMView.h; sourceTree = "<group>"; };
+		C99DAAD11334617900221DE0 /* DMView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMView.m; sourceTree = "<group>"; };
 		C99DAAD31334617900221DE0 /* Angle3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Angle3.h; sourceTree = "<group>"; };
 		C99DAAD41334617900221DE0 /* Angle3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Angle3.m; sourceTree = "<group>"; };
 		C99DAAD51334617900221DE0 /* Color3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color3.h; sourceTree = "<group>"; };
@@ -316,8 +316,8 @@
 			children = (
 				C99DAACE1334617900221DE0 /* OpenGL.h */,
 				C99DAACF1334617900221DE0 /* OpenGL.m */,
-				C99DAAD01334617900221DE0 /* OpenGLView.h */,
-				C99DAAD11334617900221DE0 /* OpenGLView.m */,
+				C99DAAD01334617900221DE0 /* DMView.h */,
+				C99DAAD11334617900221DE0 /* DMView.m */,
 			);
 			path = OpenGL;
 			sourceTree = "<group>";
@@ -360,7 +360,7 @@
 				C99DAAEF1334617900221DE0 /* DMPerspectiveCamera.h in Headers */,
 				C99DAAF11334617900221DE0 /* DMScene.h in Headers */,
 				C99DAAF31334617900221DE0 /* OpenGL.h in Headers */,
-				C99DAAF51334617900221DE0 /* OpenGLView.h in Headers */,
+				C99DAAF51334617900221DE0 /* DMView.h in Headers */,
 				C99DAAF71334617900221DE0 /* Angle3.h in Headers */,
 				C99DAAF91334617900221DE0 /* Color3.h in Headers */,
 				C99DAAFB1334617900221DE0 /* Color4.h in Headers */,
@@ -473,7 +473,7 @@
 				C99DAAF01334617900221DE0 /* DMPerspectiveCamera.m in Sources */,
 				C99DAAF21334617900221DE0 /* DMScene.m in Sources */,
 				C99DAAF41334617900221DE0 /* OpenGL.m in Sources */,
-				C99DAAF61334617900221DE0 /* OpenGLView.m in Sources */,
+				C99DAAF61334617900221DE0 /* DMView.m in Sources */,
 				C99DAAF81334617900221DE0 /* Angle3.m in Sources */,
 				C99DAAFA1334617900221DE0 /* Color3.m in Sources */,
 				C99DAAFC1334617900221DE0 /* Color4.m in Sources */,
