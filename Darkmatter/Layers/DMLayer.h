@@ -12,14 +12,20 @@
 
 @interface DMLayer : NSObject {
 	Color4 *clearColor;
+	float clearDepth;
 	NSSize currentSize;
 	BOOL clearsOnDraw;
+	BOOL clearsDepthBuffer;
 }
+
 @property (retain) Color4 *clearColor;
+@property (assign) float clearDepth;
 @property (assign) NSSize currentSize;
 @property (assign) BOOL clearsOnDraw;
+@property (assign) BOOL clearsDepthBuffer;
 
 - (void)clearView;
+- (void)clearDepthBuffer;
 - (void)prepare;
 - (void)drawObjects;
 - (void)drawAtSize:(NSSize)size;
