@@ -7,7 +7,8 @@
 //
 
 #pragma once
-#import <Cocoa/Cocoa.h>
+
+typedef unsigned short DMKey;
 
 #define KEY_A					0x00
 #define KEY_S					0x01

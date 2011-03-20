@@ -10,18 +10,16 @@
 #import <Cocoa/Cocoa.h>
 #import "DMKeyCodes.h"
 
-typedef unsigned short keycode;
 
 @interface DMInputHandler : NSObject {
 	NSMutableSet *keysPressed;
 	NSMutableSet *keysDown;
 }
 
-
 - (void)keyDown:(NSEvent *)theEvent;
 - (void)keyUp:(NSEvent *)theEvent;
 
-- (BOOL)keyIsDown:(keycode)keyCode;
-- (BOOL)keyWasPressed:(keycode)keyCode;
+- (BOOL)keyIsDown:(DMKey)keyCode;
+- (BOOL)keyWasPressed:(DMKey)keyCode;
 
 @end

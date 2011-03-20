@@ -32,11 +32,11 @@
 	[keysDown removeObject:[NSNumber numberWithUnsignedShort:[theEvent keyCode]]];
 }
 
-- (BOOL)keyIsDown:(keycode)keyCode {
+- (BOOL)keyIsDown:(DMKey)keyCode {
 	return [keysDown containsObject:[NSNumber numberWithUnsignedShort:keyCode]];
 }
 
-- (BOOL)keyWasPressed:(keycode)keyCode {
+- (BOOL)keyWasPressed:(DMKey)keyCode {
 	if([keysPressed containsObject:[NSNumber numberWithUnsignedShort:keyCode]]) {
 		[keysPressed removeObject:[NSNumber numberWithUnsignedShort:keyCode]];
 		return YES;
