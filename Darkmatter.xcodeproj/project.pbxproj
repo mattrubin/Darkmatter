@@ -180,6 +180,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C986A05B1336738A00F375C0 /* Cameras */ = {
+			isa = PBXGroup;
+			children = (
+				C99DAAB81334617900221DE0 /* DMCamera.h */,
+				C99DAAB91334617900221DE0 /* DMCamera.m */,
+				C99DAAC71334617900221DE0 /* DMOrthoCamera.h */,
+				C99DAAC81334617900221DE0 /* DMOrthoCamera.m */,
+				C99DAAC91334617900221DE0 /* DMPerspectiveCamera.h */,
+				C99DAACA1334617900221DE0 /* DMPerspectiveCamera.m */,
+			);
+			path = Cameras;
+			sourceTree = "<group>";
+		};
+		C986A05C133673B500F375C0 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				C99DAABE1334617900221DE0 /* DMKeyCodes.h */,
+				C99DAABC1334617900221DE0 /* DMInputHandler.h */,
+				C99DAABD1334617900221DE0 /* DMInputHandler.m */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		C986A05D133673D000F375C0 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				C99DAABF1334617900221DE0 /* DMLayer.h */,
+				C99DAAC01334617900221DE0 /* DMLayer.m */,
+				C99DAAC11334617900221DE0 /* DMLayer2D.h */,
+				C99DAAC21334617900221DE0 /* DMLayer2D.m */,
+				C99DAAC31334617900221DE0 /* DMLayer3D.h */,
+				C99DAAC41334617900221DE0 /* DMLayer3D.m */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
 		C99DAA3E1334346500221DE0 = {
 			isa = PBXGroup;
 			children = (
@@ -225,7 +261,10 @@
 			children = (
 				C99DAA9C1334578500221DE0 /* Darkmatter.h */,
 				C99DAAB71334617900221DE0 /* Engine */,
-				C99DAACD1334617900221DE0 /* OpenGL */,
+				C986A05C133673B500F375C0 /* Input */,
+				C986A05D133673D000F375C0 /* Layers */,
+				C986A05B1336738A00F375C0 /* Cameras */,
+				C99DAACD1334617900221DE0 /* Graphics */,
 				C99DAAD21334617900221DE0 /* DataTypes */,
 				C99DAA541334346500221DE0 /* Supporting Files */,
 			);
@@ -286,32 +325,17 @@
 		C99DAAB71334617900221DE0 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
-				C99DAAB81334617900221DE0 /* DMCamera.h */,
-				C99DAAB91334617900221DE0 /* DMCamera.m */,
 				C99DAABA1334617900221DE0 /* DMGameController.h */,
 				C99DAABB1334617900221DE0 /* DMGameController.m */,
-				C99DAABC1334617900221DE0 /* DMInputHandler.h */,
-				C99DAABD1334617900221DE0 /* DMInputHandler.m */,
-				C99DAABE1334617900221DE0 /* DMKeyCodes.h */,
-				C99DAABF1334617900221DE0 /* DMLayer.h */,
-				C99DAAC01334617900221DE0 /* DMLayer.m */,
-				C99DAAC11334617900221DE0 /* DMLayer2D.h */,
-				C99DAAC21334617900221DE0 /* DMLayer2D.m */,
-				C99DAAC31334617900221DE0 /* DMLayer3D.h */,
-				C99DAAC41334617900221DE0 /* DMLayer3D.m */,
-				C99DAAC51334617900221DE0 /* DMObject.h */,
-				C99DAAC61334617900221DE0 /* DMObject.m */,
-				C99DAAC71334617900221DE0 /* DMOrthoCamera.h */,
-				C99DAAC81334617900221DE0 /* DMOrthoCamera.m */,
-				C99DAAC91334617900221DE0 /* DMPerspectiveCamera.h */,
-				C99DAACA1334617900221DE0 /* DMPerspectiveCamera.m */,
 				C99DAACB1334617900221DE0 /* DMScene.h */,
 				C99DAACC1334617900221DE0 /* DMScene.m */,
+				C99DAAC51334617900221DE0 /* DMObject.h */,
+				C99DAAC61334617900221DE0 /* DMObject.m */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
 		};
-		C99DAACD1334617900221DE0 /* OpenGL */ = {
+		C99DAACD1334617900221DE0 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
 				C99DAACE1334617900221DE0 /* OpenGL.h */,
@@ -319,7 +343,7 @@
 				C99DAAD01334617900221DE0 /* DMView.h */,
 				C99DAAD11334617900221DE0 /* DMView.m */,
 			);
-			path = OpenGL;
+			path = Graphics;
 			sourceTree = "<group>";
 		};
 		C99DAAD21334617900221DE0 /* DataTypes */ = {
