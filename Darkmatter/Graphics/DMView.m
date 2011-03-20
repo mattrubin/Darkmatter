@@ -7,7 +7,7 @@
 //
 
 #import "DMView.h"
-#import "OpenGL.h"
+#import "DMGraphics.h"
 
 
 @implementation DMView
@@ -61,8 +61,8 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 	glClear(GL_COLOR_BUFFER_BIT);
 	
 	//Enable alpha belnding
-	[OpenGL enableAlphaBlending];
-	[OpenGL enableDepthTesting];
+	[DMGraphics enableAlphaBlending];
+	[DMGraphics enableDepthTesting];
 
 	[controller gameDidLoad];
 	

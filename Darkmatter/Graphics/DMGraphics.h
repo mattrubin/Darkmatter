@@ -1,5 +1,5 @@
 //
-//  OpenGL.h
+//  DMGraphics.h
 //  Darkmatter
 //
 //  Created by Matt Rubin on 12/27/10.
@@ -11,7 +11,7 @@
 #import "DataTypes.h"
 
 
-@interface OpenGL : NSObject {}
+@interface DMGraphics : NSObject {}
 
 + (void)setClearColor:(Color4 *)color;
 
