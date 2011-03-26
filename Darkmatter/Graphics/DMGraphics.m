@@ -11,24 +11,40 @@
 
 @implementation DMGraphics
 
-+ (void)setClearColor:(Color4 *)color {
+#pragma mark Clear
+
++ (void)setClearColor:(Color4 *)color
+{
 	glClearColor(color.red, color.green, color.blue, color.alpha);
 }
-
-
-+ (void) setAlphaBlending: (BOOL) on
++ (void)setClearDepth:(double)depth
 {
-	if (on) {
-		glEnable(GL_BLEND);
-		glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-	} else
-		glDisable(GL_BLEND);
+	glClearDepth(depth);
 }
+
+
+#pragma mark Alpha
+
++ (void)setAlphaBlending:(BOOL)on {
+	if (on) [[self class] enableAlphaBlending];
+	else [[self class] enableAlphaBlending];
+}
+
 + (void)enableAlphaBlending {
-	[[self class] setAlphaBlending:YES];
+	glEnable(GL_BLEND);
+	glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 }
+
 + (void)disableAlphaBlending {
-	[[self class] setAlphaBlending:NO];
+	glDisable(GL_BLEND);
+}
+
+
+#pragma mark Depth
+
++ (void)setDepthTesting:(BOOL)on {
+	if (on) [[self class] enableDepthTesting];
+	else [[self class] disableDepthTesting];
 }
 
 + (void)enableDepthTesting {

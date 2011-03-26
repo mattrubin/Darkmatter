@@ -60,10 +60,13 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 	[super prepareOpenGL];
 	glClear(GL_COLOR_BUFFER_BIT);
 	
-	//Enable alpha belnding
+	// Set OpenGL defaults
+	[DMGraphics setClearColor:[Color4 black]];
+	[DMGraphics setClearDepth:1.0f];
 	[DMGraphics enableAlphaBlending];
 	[DMGraphics enableDepthTesting];
-
+	
+	// Activate the game controller
 	[controller gameDidLoad];
 	
 	

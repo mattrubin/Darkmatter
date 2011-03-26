@@ -14,11 +14,13 @@
 @interface DMGraphics : NSObject {}
 
 + (void)setClearColor:(Color4 *)color;
++ (void)setClearDepth:(double)depth;
 
-+ (void) setAlphaBlending: (BOOL) on;
-+ (void) enableAlphaBlending;
-+ (void) disableAlphaBlending;
++ (void)setAlphaBlending:(BOOL)on;
++ (void)enableAlphaBlending;
++ (void)disableAlphaBlending;
 
++ (void)setDepthTesting:(BOOL)on;
 + (void)enableDepthTesting;
 + (void)disableDepthTesting;
 
